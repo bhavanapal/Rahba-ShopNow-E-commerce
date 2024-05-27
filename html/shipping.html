@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahba ShopNow</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shipping.css">
+</head>
+<body>
+    <!-- header-section -->
+    <header>
+        <div class="logo-heading">
+            <h1>Rahba <img src="../images/Group 219.svg" alt="logo"></h1>
+            <h4>choose your products</h4>
+        </div>
+    </header>
+
+    <section class="shipping">
+        <div class="shiiping_container">
+            <div class="shiiping_form">
+            <form action="payment.html">
+            <div class="shipping_address">
+                <label for="email">Contact
+                    <input type="email" id="email" name="email" placeholder="store@gmail.com">
+                </label>
+                <hr>
+                <label for="ship_address">Ship to
+                    <input type="text" id="address" name="address" placeholder="address">
+                </label> 
+            </div>
+
+        <div class="shipping_method">
+                <h5>shipping method</h5>
+            <div class="delivery_method">
+                <label for="free">
+                <input type="radio" id="free" name="delivery"oncick="myfunction(this.value)" value="free shipping">
+                free shipping</label>
+                <label for="expedited">
+                <input type="radio" id="expedited" name="delivery" oncick="myfunction(this.value)" value="expedited shipping">
+                expedited shipping(4-5 bussiness days)</label>
+                <label for="xpresspost">
+                <input type="radio" id="xpresspost" name="delivery" oncick="myfunction(this.value)" value="xpresspost">
+                xpresspost(3 business days)</label>
+            </div>
+         </div>
+
+            <div class="col-2">
+                <a href="checkoutform.html">back to information</a>
+                <a href="payment.html">
+                    <button class="continue_shipping">continue to payment</button>
+                </a>
+            </div> 
+        </form>
+    </div>
+    <div class="order_summary">
+        <h4>order summary(1 items)</h4>
+        <div class="order_item">
+            <img src="../images/shop/brown-bread-flour.svg" alt="">
+            <div class="pdetails">
+            <p class="pname">Brown Bread Flour</p>
+            <p class="pquantity">quantity:1</p>
+            <p class="pprice">&#x20B9;350</p>
+            </div>
+            <i class="fa-solid fa-x"></i>
+        </div>
+        <div class="total_item">
+            <p>item total(1)<span class="price">&#x20B9;00</span></p>
+           <hr>
+            <h5>total<span class="price">&#x20B9;00</span></h5>
+        </div>
+    </div>
+        </div>
+    </section>
+
+
+    <script>
+        function myFunction(delivery) {
+  document.getElementById("result").value =delivery;
+   }
+    </script>
+</body>
+</html>

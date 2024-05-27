@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahba ShopNow</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+    <!-- header-section -->
+  <header>
+    <section class="section-1">
+     
+        <div class="logo">
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+         <h1>Rahba <img src="../images/Group 219.svg" alt="logo"></h1>
+        </div>
+        
+        <div class="search">
+            <img src="../images/search1.svg" alt="icon">
+            <input type="text" placeholder="search" class="input-search">
+            <img src="../images/search.svg" alt="search-icon">
+        </div>
+      
+       
+        <div class="cart-icon">
+            <div class="cartAmt">
+            <a href="cart.html"><i class="fa-solid fa-cart-shopping"></i></a>
+             <div id="cartAmount" class="cartAmount">0</div> 
+            </div>
+            <a href="#"><i class="fa-solid fa-user"></i></a>
+        </div>
+      </section>
+     
+
+      <div class="navbar" id="myLinks">
+         <a href="index.html">Home</a>
+         <a href="ourproducts.html">Our Product</a>
+         <a href="shopnow.html">Shop Now</a>
+         <a href="aboutus.html">About Us</a>
+      </div> 
+  </header>
+
+
+<!-- shopping-cart -->
+<div class="cart-heading">
+  <h3>Shopping cart</h3>
+</div>
+ <section class="shoppingcart">
+     <table  class="shopping-cart" >
+        <tr>
+          <th>product</th>
+          <th>product name</th>
+          <th>quantity</th>
+          <th>price</th>
+          <th>total price</th>
+          <th>delete item</th>
+        </tr>
+       <tbody id="shopping-cart"></tbody> 
+      </table>
+
+    <div class="cart" id="label"></div>
+  </section> 
+  
+  <script>
+    function myFunction() {
+     var x = document.getElementById("myLinks");
+       if(x.style.display === "block"){
+         x.style.display = "none" ;
+           }else{
+             x.style.display = "block";
+           }
+         }
+</script> 
+<script src="../js/data.js"></script> 
+<script src="../js/cart.js"></script> 
+</body>
+</html>

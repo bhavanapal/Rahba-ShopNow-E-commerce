@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahba ShopNow</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/shipping.css"> 
+    <link rel="stylesheet" href="../css/payment.css">
+</head>
+<body>
+    <!-- header-section -->
+    <header>
+        <div class="logo-heading">
+            <h1>Rahba <img src="../images/Group 219.svg" alt="logo"></h1>
+            <h4>choose your products</h4>
+        </div>
+    </header>
+
+    <section class="payment">
+      <div class="payment_container">
+        <div class="payment_form">
+            <form action="#">
+                <div class="payment_contact">
+                    <label for="email">contact
+                        <input type="email" id="email" name="email" placeholder="store@gmail.com" autocomplete="off">
+                    </label>
+                    <hr>
+                    <label for="address">ship to
+                        <input type="text" id="address" name="address" placeholder="address" autocomplete="off">
+                    </label>
+                    <hr>
+                    <label>method
+                        <input type="text" id="result" autocomplete="off">
+                    </label>
+                </div>
+
+                <div class="payment_card">
+                    <h3>payment</h3>
+                <div class="card_icon">
+                    <i class="fa-brands fa-cc-visa"></i>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <i class="fa-brands fa-paypal"></i>
+                    <i class="fa-brands fa-google-pay"></i>
+                    <i class="fa-brands fa-cc-apple-pay"></i>
+                </div>
+
+                <div class="card_information">
+                    <input type="text" id="card_number" name="number" placeholder="card number" autocomplete="off">
+                    <input type="text" id="card_holdername" name="holdername" placeholder="card holdername" autocomplete="off">
+                    <div class="row">
+                        <input type="text" id="card_expiredate" name="expiredate" placeholder="expiration date(mm/yy)" autocomplete="off">
+                        <input type="text" id="card_securitycode" name="security code" placeholder="security code" autocomplete="off">
+                    </div>
+                    <label for="save_information">
+                    <input type="checkbox" id="save_information" name="save_information">save this information for next time.
+                </label>
+                </div>
+               </div>
+
+                <div class="billing_address">
+                    <h3>billing address</h3>
+                    <p>select the address that matches your card or payment method</p>
+                    <div class="bill">
+                    <label for="caed_number">
+                   <input type="radio" id="card_number" name="card number"> card number
+                </label>
+                <label for="caed_number">
+                   <input type="radio" id="card_number" name="card number"> card number
+                </label>
+            </div>
+                </div>
+
+                <div class="col-2">
+                    <a href="shipping.html">back to shipping</a>
+                    <a href="payment.html">
+                        <button class="continue_shipping">pay now</button>
+                    </a>
+                </div>
+
+               
+            </form>
+        </div>
+        <div class="order_summary">
+            <h4>order summary(1 items)</h4>
+            <div class="order_item">
+                <img src="../images/shop/brown-bread-flour.svg" alt="">
+                <div class="pdetails">
+                <p class="pname">Brown Bread Flour</p>
+                <p class="pquantity">quantity:1</p>
+                <p class="pprice">&#x20B9;350</p>
+                </div>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="total_item">
+                <p>item total(1)<span class="price">&#x20B9;00</span></p>
+               <hr>
+                <h5>total<span class="price">&#x20B9;00</span></h5>
+            </div>
+        </div>
+      </div>
+    </section>
+</body>
+</html>

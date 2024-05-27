@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rahba ShopNow</title>
+    <link rel="stylesheet" href= "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/checkoutform.css">
+</head>
+<body>
+     <!-- header-section -->
+     <header>
+        <div class="logo-heading">
+            <h1>Rahba <img src="../images/Group 219.svg" alt="logo"></h1>
+            <h4>choose your products</h4>
+        </div>
+    </header>
+<section class="checkout_form" id="checkout_form">
+    <div class="checkout">
+        <div class="checkout_container">
+         <form action="shipping.html">
+            <div class="form_container">
+            <div class="info_container">
+
+            <div class="form_heading">
+                <h2>contact information</h2>
+                <p>Already have an account?<a href="#">log in</a></p>
+            </div>
+
+            <div class="contact_info">
+                <input type="text" id="email" name="email" placeholder="email" autocomplete="off">
+                <label for="email_me">
+                <input type="checkbox" checked="checked" id="email_me" name="email_me">email me with news and offers
+                </label>
+            </div>
+
+            <div class="delivery_method">
+                <h5>Delivery method</h5>
+                <input type="radio" id="ship" name="delivery" value="ship">
+                <label for="ship">ship</label>
+                <input type="radio" id="pickup" name="delivery" value="pick_up">
+                <label for="pickup">pick up</label>
+            </div>
+
+            <div class="shipping">
+                <h5>shipping address</h5>
+                <div class="shipping_container">
+                <div class="col-2">
+                    <input type="text" id="fname" name="firstname" placeholder="first name">
+                    <input type="text" id="lname" name="lastname" placeholder="last name">
+                </div>
+                <input type="text" id="country" name="country_name" placeholder="country">
+                <input type="text" id="address" name="address" placeholder="address">
+                <input type="text" id="apartement" name="apartement" placeholder="apartment,suit etc.">    
+                <div class="col-3">
+                 <input type="text" id="city_add" name="city" placeholder="city">
+                 <input type="text" id="province" name="province" placeholder="province">
+                 <input type="text" id="postal_code" name="postal" placeholder="postal code">
+               </div>
+               <input type="text" id="phone" name="phoneno" placeholder="phone">
+            </div>
+        </div>
+            <div class="contact_info">
+              <label for="save_info">
+                <input type="checkbox"checked="checked" id="save_info" name="save_information">save this information for next time
+              </label>
+            </div>
+            </div>
+            <div class="col-2">
+                <a href="cart.html">back to cart </a>
+                <a href="shipping.html">
+                    <button class="continue_shipping">continue to shipping</button>
+                </a>
+            </div> 
+        </div>
+         </form>
+        <div class="order_summary">
+            <h4>order summary(1 items)</h4>
+            <div class="order_item">
+                <img src="../images/shop/brown-bread-flour.svg" alt="">
+                <div class="pdetails">
+                <p class="pname">Brown Bread Flour</p>
+                <p class="pquantity">quantity:1</p>
+                <p class="pprice">&#x20B9;350</p>
+                </div>
+                <i class="fa-solid fa-x"></i>
+            </div>
+            <div class="total_item">
+                <p>item total(1)<span class="price">&#x20B9;00</span></p>
+               <hr>
+                <h5>total<span class="price">&#x20B9;00</span></h5>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+</body>
+</html>
