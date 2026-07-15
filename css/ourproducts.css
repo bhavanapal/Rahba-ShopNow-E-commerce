@@ -8,823 +8,297 @@ body {
 overflow-x: hidden;
 }
 
-/* ---------- Deals Section ---------- */
-
-.deals-section {
-width: 100%;
-max-width: 1400px;
-margin: 0 auto;
-padding: 60px 5%;
+.deals-section{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+    width: 1368px;
+    height:593px;
+}
+.deal-heading h2{
+    padding:8px;
+    gap:4px; 
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    text-transform: capitalize;
+    color:var(--primary);
+}
+.about-deals{
 display: flex;
-flex-direction: column;
-gap: 32px;
-}
-
-.deal-heading h2 {
-padding: 8px;
-font-size: clamp(26px, 3vw, 36px);
-font-weight: 600;
-line-height: 120%;
-text-transform: capitalize;
-color: var(--primary);
-}
-
-/* Deal Content */
-
-.about-deals {
-width: 100%;
-display: flex;
-align-items: center;
-gap: 32px;
-}
-
-.deal-img {
-width: 65%;
-}
-
-.about-deals img {
-width: 100%;
-height: auto;
-display: block;
-}
-
-/* Deal Information */
-
-.abouts-deal {
-width: 35%;
-display: flex;
-flex-direction: column;
+align-items: flex-start;
 gap: 16px;
 }
-
-.deal-name h3 {
-padding: 8px;
-font-size: clamp(20px, 2vw, 26px);
-font-weight: 600;
-line-height: 120%;
-text-transform: capitalize;
-color: var(--primary);
+.about-deals img{
+    width: 886px;
+height: 502px;
 }
-
-.deal-price {
-display: flex;
+.abouts-deal, .deal-name,.about-item{
+     display: flex; 
+ flex-direction: column; 
+ align-items: flex-start;
+ gap: 16px;
+}  
+.deal-name{
+  gap:12px;
+}
+.deal-name h3{
+    padding:8px;
+    gap:4px;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; 
+    text-transform: capitalize;
+    color:var(--primary);
+}
+.deal-price{
+    display: flex;
+ width: 129px; 
+justify-content: space-between; 
 align-items: center;
 }
-
-.deal-price h4 {
-
+.deal-price h4{
+font-family: Roboto;
 font-size: 20px;
+font-style: normal;
 font-weight: 500;
 line-height: 120%;
 text-transform: capitalize;
-color: var(--black);
-
+color:var(--black);
 }
-
-.about-item {
-display: flex;
-flex-direction: column;
-gap: 18px;
-}
-
-.about-item p {
-
-width: 100%;
-max-width: 500px;
-
-font-size: 13px;
+.about-item p{
+    width: 466px;
+    height: 64px;
+    font-size: 12px;
+font-style: normal;
 font-weight: 400;
 line-height: 120%;
 text-transform: capitalize;
-
 color: var(--style-color-7);
-
 }
-
-/* Deal Button */
-
-.d-button {
-
-width: 100%;
-max-width: 265px;
-height: 42px;
-
-display: flex;
+.d-button{
+    display: flex;
+width: 265px;
+height: 36px;
+padding: 16px 18px;
 justify-content: center;
 align-items: center;
 gap: 8px;
-
 border-radius: 4px;
 border: 1px solid var(--yellow);
-
 background: var(--yellow);
-
+font-family: Inter;
 font-size: 14px;
-color: var(--primary);
-
-cursor: pointer;
-transition: .3s ease;
-
-}
-
-.d-button {
-opacity: .85;
-}
-
-
-
-
-/* =========================================
-FILTER SECTION
-========================================= */
-
-.filter-items {
-
-width: 100%;
-max-width: 1400px;
-
-margin: auto;
-padding: 40px 5%;
-
-display: flex;
-flex-direction: column;
-gap: 35px;
-
-}
-
-
-
-
-/* Filter Buttons */
-
-.filters-btn {
-
-width: 100%;
-
-display: flex;
-justify-content: center;
-flex-wrap: wrap;
-
-gap: 10px;
-
-}
-
-.filters-btn button {
-
-padding: 10px 14px;
-
-border: none;
-outline: none;
-
-background: var(--white);
-
-font-size: 16px;
-font-weight: 500;
-
-text-transform: capitalize;
-
-color: var(--storm-grey);
-
-cursor: pointer;
-
-border-radius: 4px;
-
-transition: .3s ease;
-
-}
-
-
-
-
-.filters-btn button {
-
-background: var(--yellow);
-color: var(--primary);
-
-}
-
-
-
-
-.filters-btn button.active {
-
-background: var(--yellow);
-color: var(--primary);
-
-}
-
-
-
-
-/* Product Container */
-
-.filter-container {
-
-width: 100%;
-
-display: grid;
-
-grid-template-columns:
-repeat(auto-fit,minmax(260px,1fr));
-
-gap: 30px;
-
-}
-
-
-
-
-/* Product Card */
-
-.filters {
-
-width: 100%;
-
-background: var(--white);
-
-padding: 10px;
-
-display: flex;
-flex-direction: column;
-
-gap: 15px;
-
-transition: .3s ease;
-
-}
-
-.filters {
-
-transform: translateY(-5px);
-
-}
-
-/* Hide Filter Items */
-
-.filter-items .filters.hide {
-
-display:none;
-
-}
-
-/* Product Image */
-
-.filter-img {
-
-width:100%;
-
-display:flex;
-justify-content:center;
-align-items:center;
-
-overflow:hidden;
-
-}
-
-
-
-
-.filter-img img {
-
-width:100%;
-height:auto;
-
-aspect-ratio: 1 / 1;
-
-object-fit:cover;
-
-display:block;
-
-}
-
-
-
-
-/* Product Content */
-
-.filter-content {
-
-width:100%;
-
-padding:8px;
-
-display:flex;
-
-flex-direction:column;
-
-align-items:flex-start;
-
-gap:12px;
-
-}
-
-
-
-
-.filter-content h2 {
-
-width:100%;
-
-min-height:45px;
-
-
-font-size:15px;
-
-font-weight:400;
-
-line-height:120%;
-
-text-transform:capitalize;
-
+font-style: normal;
+font-weight: 400;
+line-height: normal;
 color:var(--primary);
-
-
-display:-webkit-box;
-
--webkit-line-clamp:2;
-
--webkit-box-orient:vertical;
-
-overflow:hidden;
-
-}
-
-
-
-
-/* Rating Stars */
-
-.star {
-
-display:flex;
-
-align-items:center;
-
-gap:4px;
-
-}
-
-
-
-
-.star i {
-
-font-size:16px;
-
-color:#D9D9D9;
-
-}
-
-
-
-
-.star .checked {
-
-color:#FFC107;
-
-}
-
-
-
-
-/* Product Price */
-
-.filter-content h4 {
-
-font-size:18px;
-
-font-weight:500;
-
-line-height:120%;
-
-text-transform:capitalize;
-
-color:var(--primary);
-
-}
-
-
-
-
-/* Add To Cart Button */
-
-.p-button {
-
-width:100%;
-
-height:40px;
-
-
-display:flex;
-
-justify-content:center;
-
-align-items:center;
-
-gap:8px;
-
-
-border:none;
-
-border-radius:4px;
-
-
-background:var(--yellow);
-
-color:var(--primary);
-
-
-font-size:14px;
-
-font-weight:500;
-
-
 cursor:pointer;
-
-transition:.3s ease;
-
 }
 
+/* filter-section */
+
+.filter-items{
+    display: flex;
+flex-direction: column;
+align-items: flex-end;
+gap: 32px;
+ }
+ .filters-btn{
+    display: flex;
+   align-items: flex-end;
+   gap: 8px;
+ }
+ .filters-btn  button{ 
+ padding: 8px; 
+gap: 4px;
+border:none;
+outline: auto;
+font-size: 18px;
+font-style: normal;
+font-weight: 500;
+line-height: 120%; 
+text-transform: capitalize;
+background: var(--white);
+cursor: pointer;
+ }
+ button{
+    color:var( --storm-grey);
+ } 
+button.active{
+    background: var(--yellow);
+    color:var(--primary);
+
+ } 
+ .filter-container{
+    display: flex;
+    flex-wrap: wrap; 
+    gap: 32px;  
+    width:1358px;
+ }
+ .filters{
+    gap: 38px;
+    width:311px;
+    position: relative; 
+    display: flex;
+padding: 8px 4px;
+flex-direction: column;
+align-items: flex-start;
+background: #FFF;
+ }
+ .filter-items .filters.hide{
+    display:none;
+ }  
+ .filter-img{
+    display: flex;
+    align-items: flex-start; 
+    gap: -53px;
+  }
+  .filter-img img{
+     width: 303px;
+     height: 361px; 
+   background-repeat: no-repeat;  
+  }
+  .filter-content{
+ display: flex;
+ width:303px;
+ padding: 4px;
+ flex-direction: column;
+  justify-content: center; 
+ align-items: flex-start;
+ gap: 4px;
+  }
+  .filter-content h2{
+     align-self:auto;
+     flex-shrink: 0;
+  height: 40px;
+ padding: 8px 0px;
+ gap: 10px;
+ font-size: 14px;
+ font-style: normal;
+ font-weight: 300;
+ line-height: 120%; 
+ text-transform: capitalize;
+ color: var(--primary);
+  }
+  .filter-content .star{
+      display: flex;
+ justify-content: center;
+ align-items: center; 
+ gap: 4px;
+  }
+  .filter-content .star i{
+     width: 24px;
+     height: 24px;
+  }
+  .filter-content h4{
+     font-size: 18px;
+ font-style: normal;
+ font-weight: 500;
+ line-height: 120%; 
+ text-transform: capitalize;
+ color: var(--primary);
+  }
 
 
 
-.p-button {
-
-opacity:.85;
-
-}
 
 
 
-
-/* =========================================
-PRODUCT CARD RESPONSIVE FIXES
-========================================= */
-
-
-
-
-@media(max-width:1200px){
-
-.filter-container{
-
-    grid-template-columns:
-    repeat(3,1fr);
-
-}
-
-}
-
-
-
-
-@media(max-width:900px){
-
-.filter-container{
-
-    grid-template-columns:
-    repeat(2,1fr);
-
-    gap:20px;
-
-}
-
-}
-
-
-
+/* media queries */
 
 @media(max-width:600px){
-
-.filter-container{
-
-    grid-template-columns:
-    1fr;
-
-    gap:20px;
-
-}
-
-
-
-.filters{
-
-    max-width:100%;
-
-}
-
-
-
-.filter-content h2{
-
-    font-size:14px;
-
-}
-
-
-
-.p-button{
-
-    height:38px;
-
-}
-
-}
-
-@media (max-width:1400px){
-
-.deals-section,
-.filter-items{
-
-    padding-left:4%;
-    padding-right:4%;
-
-}
-
-}
-
-/* Laptop */
-
-@media(max-width:1100px){
-
-.about-deals{
-
-    gap:25px;
-
-}
-
-
-.deal-img{
-
-    width:55%;
-
-}
-
-
-.abouts-deal{
-
-    width:45%;
-
-}
-
-}
-
-
-
-
-/* Tablet */
-
-@media(max-width:768px){
-
-
-
-
-.deals-section{
-
-    padding:40px 5%;
-
-}
-
-
-
-.about-deals{
-
-    flex-direction:column;
-
-    align-items:center;
-
-}
-
-
-
-.deal-img,
-.abouts-deal{
-
-    width:100%;
-
-}
-
-
-
-.about-deals img{
-
-    width:100%;
-
-}
-
-
-
-.about-item p{
-
-    max-width:100%;
-
-}
-
-
-
-.d-button{
-
-    max-width:100%;
-
-}
-
-
-
-.filter-items{
-
-    padding:30px 5%;
-
-}
-
-
-
-.filters-btn{
-
-    justify-content:flex-start;
-
-    overflow-x:auto;
-
-    flex-wrap:nowrap;
-
-    padding-bottom:10px;
-
-}
-
-
-
-.filters-btn button{
-
-    white-space:nowrap;
-
+    .deals-section{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+        padding: 32px;
+        width: 600px;
+        height:800px;   
+    } 
+    .deal-heading h2{
+        display: flex;
+        width: 534px;
+        justify-content: space-between;
+        align-items: center;
+    } 
+    .about-deals{
+        display: flex;
+        align-items: flex-start;
+        gap: 16px;
+        width: 534px;
+        flex-direction: column;
+        }
+        .about-deals img{
+            width: 534px;
+            height: 373px;
+        }
+        .abouts-deal{
+            display: flex;
+          flex-direction: column;
+           align-items: flex-start;
+              gap: 16px;
+           align-self: stretch; 
+        }
+        .deal-name, .deal-price{
+            gap: 8px;
+        }
+        .about-item{
+            gap: 12px;
+        }
+
+        /* filter-items */
+        .filter-items{
+            display: flex;
+            padding: 32px 0px;
+            flex-direction: column;
+            align-items: center;
+             gap: 32px;
+             width:528px;
+        }
+        .filters-btn  button{
+padding: 8px; 
+gap: 4px;
+font-size: 16px;
+cursor: pointer;
+        }
+        .filter-container{
+      display: grid;
+      grid-template-columns: repeat(2,235px);
+      width:528px; 
+      gap:24px; 
+      padding: 8px 4px;
+        }
+        .filters{
+            width:250px;
+        }
+       .filter-img{ 
+           gap:-45px; 
+          }
+        .filter-img img{
+            width:250px;  
+         }
+        .p-button{
+            width:220px;
+        }
+        
 }
 
 
 
 
-}
 
 
 
 
-/* Mobile */
 
-@media(max-width:600px){
 
 
 
 
-.deals-section{
 
-    padding:30px 16px;
 
-    gap:25px;
-
-}
-
-
-
-.deal-heading h2{
-
-    font-size:28px;
-
-}
-
-
-
-.deal-name h3{
-
-    font-size:22px;
-
-}
-
-
-
-.deal-price h4{
-
-    font-size:18px;
-
-}
-
-
-
-.about-item p{
-
-    font-size:13px;
-
-    line-height:140%;
-
-}
-
-
-
-.filter-items{
-
-    padding:25px 16px;
-
-}
-
-
-
-.filter-container{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-
-}
-
-
-
-
-/* Small Mobile */
-
-@media(max-width:380px){
-
-
-
-
-.deal-heading h2{
-
-    font-size:24px;
-
-}
-
-
-
-.deal-name h3{
-
-    font-size:19px;
-
-}
-
-
-
-.filters-btn button{
-
-    font-size:14px;
-
-    padding:8px 10px;
-
-}
-
-
-
-.filter-content h2{
-
-    font-size:13px;
-
-}
-
-
-
-.filter-content h4{
-
-    font-size:16px;
-
-}
-
-}
-
-
-
-
-/* Prevent Image Overflow Everywhere */
-
-img{
-
-max-width:100%;
-
-}
-
-
-
-
-/* Prevent Text Overflow */
-
-h1,
-h2,
-h3,
-h4,
-p,
-a{
-
-overflow-wrap:break-word;
-
-}
-
-
-
-
-/* Remove Horizontal Scroll */
-
-html,
-body{
-
-max-width:100%;
-
-overflow-x:hidden;
-
-}
