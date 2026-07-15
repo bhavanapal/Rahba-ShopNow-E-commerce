@@ -1,13 +1,3 @@
-/* ---------- Global Product Page ---------- */
-
-{
-box-sizing: border-box;
-}
-
-body {
-overflow-x: hidden;
-}
-
 .deals-section{
     display: flex;
     flex-direction: column;
