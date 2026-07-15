@@ -1,387 +1,830 @@
-/* ====================================
-   DEAL SECTION
-==================================== */
+/* ---------- Global Product Page ---------- */
 
-.deals-section{
-    width:100%;
-    max-width:1440px;
-    margin:auto;
-
-    display:flex;
-    flex-direction:column;
-    gap:40px;
-
-    padding:40px 20px;
+{
+box-sizing: border-box;
 }
 
-.deal-heading h2{
-    font-size:clamp(28px,3vw,36px);
-    font-weight:600;
-    color:var(--primary);
-    text-transform:capitalize;
+body {
+overflow-x: hidden;
 }
 
-/* Layout */
+/* ---------- Deals Section ---------- */
 
-.about-deals{
-    display:grid;
-    grid-template-columns:2fr 1fr;
-    gap:40px;
-    align-items:center;
+.deals-section {
+width: 100%;
+max-width: 1400px;
+margin: 0 auto;
+padding: 60px 5%;
+display: flex;
+flex-direction: column;
+gap: 32px;
 }
 
-/* Image */
-
-.about-deals img{
-    width:100%;
-    height:auto;
-    border-radius:8px;
-    object-fit:cover;
+.deal-heading h2 {
+padding: 8px;
+font-size: clamp(26px, 3vw, 36px);
+font-weight: 600;
+line-height: 120%;
+text-transform: capitalize;
+color: var(--primary);
 }
 
-/* Right Side */
+/* Deal Content */
 
-.abouts-deal,
-.deal-name,
-.about-item{
-    display:flex;
-    flex-direction:column;
-    gap:18px;
+.about-deals {
+width: 100%;
+display: flex;
+align-items: center;
+gap: 32px;
 }
 
-.deal-name h3{
-    font-size:clamp(22px,2vw,28px);
-    color:var(--primary);
+.deal-img {
+width: 65%;
 }
 
-.deal-price{
-    display:flex;
-    align-items:center;
-    gap:20px;
+.about-deals img {
+width: 100%;
+height: auto;
+display: block;
 }
 
-.deal-price h4{
-    font-size:22px;
-    color:var(--black);
-    font-weight:500;
+/* Deal Information */
+
+.abouts-deal {
+width: 35%;
+display: flex;
+flex-direction: column;
+gap: 16px;
 }
 
-.about-item p{
-    width:100%;
-    font-size:15px;
-    line-height:1.7;
-    color:var(--style-color-7);
+.deal-name h3 {
+padding: 8px;
+font-size: clamp(20px, 2vw, 26px);
+font-weight: 600;
+line-height: 120%;
+text-transform: capitalize;
+color: var(--primary);
 }
 
-.d-button{
-    width:240px;
-    max-width:100%;
-
-    height:45px;
-
-    border:none;
-    border-radius:5px;
-
-    background:var(--yellow);
-
-    color:var(--primary);
-
-    font-size:15px;
-    font-weight:500;
-
-    cursor:pointer;
-
-    transition:.3s;
+.deal-price {
+display: flex;
+align-items: center;
 }
 
-.d-button:hover{
-    transform:translateY(-3px);
+.deal-price h4 {
+
+font-size: 20px;
+font-weight: 500;
+line-height: 120%;
+text-transform: capitalize;
+color: var(--black);
+
 }
 
-/* ====================================
-   FILTER SECTION
-==================================== */
-
-.filter-items{
-
-    width:100%;
-    max-width:1440px;
-
-    margin:auto;
-
-    display:flex;
-    flex-direction:column;
-
-    gap:35px;
-
-    padding:40px 20px;
+.about-item {
+display: flex;
+flex-direction: column;
+gap: 18px;
 }
+
+.about-item p {
+
+width: 100%;
+max-width: 500px;
+
+font-size: 13px;
+font-weight: 400;
+line-height: 120%;
+text-transform: capitalize;
+
+color: var(--style-color-7);
+
+}
+
+/* Deal Button */
+
+.d-button {
+
+width: 100%;
+max-width: 265px;
+height: 42px;
+
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 8px;
+
+border-radius: 4px;
+border: 1px solid var(--yellow);
+
+background: var(--yellow);
+
+font-size: 14px;
+color: var(--primary);
+
+cursor: pointer;
+transition: .3s ease;
+
+}
+
+.d-button {
+opacity: .85;
+}
+
+
+
+
+/* =========================================
+FILTER SECTION
+========================================= */
+
+.filter-items {
+
+width: 100%;
+max-width: 1400px;
+
+margin: auto;
+padding: 40px 5%;
+
+display: flex;
+flex-direction: column;
+gap: 35px;
+
+}
+
+
+
 
 /* Filter Buttons */
 
-.filters-btn{
+.filters-btn {
 
-    display:flex;
+width: 100%;
 
-    justify-content:center;
+display: flex;
+justify-content: center;
+flex-wrap: wrap;
 
-    flex-wrap:wrap;
-
-    gap:15px;
-}
-
-.filters-btn button{
-
-    padding:10px 18px;
-
-    border:1px solid #ddd;
-
-    background:#fff;
-
-    color:var(--storm-grey);
-
-    font-size:16px;
-
-    cursor:pointer;
-
-    border-radius:5px;
-
-    transition:.3s;
-}
-
-.filters-btn button:hover{
-
-    background:var(--yellow);
-
-    color:var(--primary);
+gap: 10px;
 
 }
 
-button.active{
+.filters-btn button {
 
-    background:var(--yellow);
+padding: 10px 14px;
 
-    color:var(--primary);
+border: none;
+outline: none;
+
+background: var(--white);
+
+font-size: 16px;
+font-weight: 500;
+
+text-transform: capitalize;
+
+color: var(--storm-grey);
+
+cursor: pointer;
+
+border-radius: 4px;
+
+transition: .3s ease;
 
 }
 
-/* Products Grid */
+
+
+
+.filters-btn button {
+
+background: var(--yellow);
+color: var(--primary);
+
+}
+
+
+
+
+.filters-btn button.active {
+
+background: var(--yellow);
+color: var(--primary);
+
+}
+
+
+
+
+/* Product Container */
+
+.filter-container {
+
+width: 100%;
+
+display: grid;
+
+grid-template-columns:
+repeat(auto-fit,minmax(260px,1fr));
+
+gap: 30px;
+
+}
+
+
+
+
+/* Product Card */
+
+.filters {
+
+width: 100%;
+
+background: var(--white);
+
+padding: 10px;
+
+display: flex;
+flex-direction: column;
+
+gap: 15px;
+
+transition: .3s ease;
+
+}
+
+.filters {
+
+transform: translateY(-5px);
+
+}
+
+/* Hide Filter Items */
+
+.filter-items .filters.hide {
+
+display:none;
+
+}
+
+/* Product Image */
+
+.filter-img {
+
+width:100%;
+
+display:flex;
+justify-content:center;
+align-items:center;
+
+overflow:hidden;
+
+}
+
+
+
+
+.filter-img img {
+
+width:100%;
+height:auto;
+
+aspect-ratio: 1 / 1;
+
+object-fit:cover;
+
+display:block;
+
+}
+
+
+
+
+/* Product Content */
+
+.filter-content {
+
+width:100%;
+
+padding:8px;
+
+display:flex;
+
+flex-direction:column;
+
+align-items:flex-start;
+
+gap:12px;
+
+}
+
+
+
+
+.filter-content h2 {
+
+width:100%;
+
+min-height:45px;
+
+
+font-size:15px;
+
+font-weight:400;
+
+line-height:120%;
+
+text-transform:capitalize;
+
+color:var(--primary);
+
+
+display:-webkit-box;
+
+-webkit-line-clamp:2;
+
+-webkit-box-orient:vertical;
+
+overflow:hidden;
+
+}
+
+
+
+
+/* Rating Stars */
+
+.star {
+
+display:flex;
+
+align-items:center;
+
+gap:4px;
+
+}
+
+
+
+
+.star i {
+
+font-size:16px;
+
+color:#D9D9D9;
+
+}
+
+
+
+
+.star .checked {
+
+color:#FFC107;
+
+}
+
+
+
+
+/* Product Price */
+
+.filter-content h4 {
+
+font-size:18px;
+
+font-weight:500;
+
+line-height:120%;
+
+text-transform:capitalize;
+
+color:var(--primary);
+
+}
+
+
+
+
+/* Add To Cart Button */
+
+.p-button {
+
+width:100%;
+
+height:40px;
+
+
+display:flex;
+
+justify-content:center;
+
+align-items:center;
+
+gap:8px;
+
+
+border:none;
+
+border-radius:4px;
+
+
+background:var(--yellow);
+
+color:var(--primary);
+
+
+font-size:14px;
+
+font-weight:500;
+
+
+cursor:pointer;
+
+transition:.3s ease;
+
+}
+
+
+
+
+.p-button {
+
+opacity:.85;
+
+}
+
+
+
+
+/* =========================================
+PRODUCT CARD RESPONSIVE FIXES
+========================================= */
+
+
+
+
+@media(max-width:1200px){
 
 .filter-container{
 
-    width:100%;
+    grid-template-columns:
+    repeat(3,1fr);
 
-    display:grid;
-
-    grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
-
-    gap:25px;
 }
 
-/* Card */
+}
+
+
+
+
+@media(max-width:900px){
+
+.filter-container{
+
+    grid-template-columns:
+    repeat(2,1fr);
+
+    gap:20px;
+
+}
+
+}
+
+
+
+
+@media(max-width:600px){
+
+.filter-container{
+
+    grid-template-columns:
+    1fr;
+
+    gap:20px;
+
+}
+
+
 
 .filters{
 
-    background:#fff;
-
-    border-radius:8px;
-
-    overflow:hidden;
-
-    box-shadow:0 5px 20px rgba(0,0,0,.08);
-
-    transition:.3s;
-
-    display:flex;
-
-    flex-direction:column;
-}
-
-.filters:hover{
-
-    transform:translateY(-6px);
+    max-width:100%;
 
 }
 
-.filter-items .filters.hide{
-    display:none;
-}
 
-/* Image */
-
-.filter-img img{
-
-    width:100%;
-
-    height:320px;
-
-    object-fit:contain;
-
-    background:#f8f9fa;
-}
-
-/* Content */
-
-.filter-content{
-
-    padding:15px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:10px;
-}
 
 .filter-content h2{
 
-    font-size:15px;
+    font-size:14px;
 
-    font-weight:400;
-
-    color:var(--primary);
-
-    line-height:1.5;
 }
 
-.star{
 
-    display:flex;
 
-    gap:4px;
+.p-button{
 
-    color:#ffc107;
+    height:38px;
+
 }
 
-.filter-content h4{
-
-    font-size:20px;
-
-    color:var(--primary);
 }
 
-/* ====================================
-   TABLET
-==================================== */
+@media (max-width:1400px){
 
-@media (max-width:992px){
+.deals-section,
+.filter-items{
+
+    padding-left:4%;
+    padding-right:4%;
+
+}
+
+}
+
+/* Laptop */
+
+@media(max-width:1100px){
 
 .about-deals{
 
-    grid-template-columns:1fr;
+    gap:25px;
 
 }
+
+
+.deal-img{
+
+    width:55%;
+
+}
+
+
+.abouts-deal{
+
+    width:45%;
+
+}
+
+}
+
+
+
+
+/* Tablet */
+
+@media(max-width:768px){
+
+
+
+
+.deals-section{
+
+    padding:40px 5%;
+
+}
+
+
+
+.about-deals{
+
+    flex-direction:column;
+
+    align-items:center;
+
+}
+
+
+
+.deal-img,
+.abouts-deal{
+
+    width:100%;
+
+}
+
+
 
 .about-deals img{
 
     width:100%;
-}
-
-.filter-container{
-
-    grid-template-columns:repeat(2,1fr);
 
 }
 
+
+
+.about-item p{
+
+    max-width:100%;
+
 }
 
-/* ====================================
-   MOBILE
-==================================== */
 
-@media (max-width:600px){
+
+.d-button{
+
+    max-width:100%;
+
+}
+
+
+
+.filter-items{
+
+    padding:30px 5%;
+
+}
+
+
+
+.filters-btn{
+
+    justify-content:flex-start;
+
+    overflow-x:auto;
+
+    flex-wrap:nowrap;
+
+    padding-bottom:10px;
+
+}
+
+
+
+.filters-btn button{
+
+    white-space:nowrap;
+
+}
+
+
+
+
+}
+
+
+
+
+/* Mobile */
+
+@media(max-width:600px){
+
+
+
 
 .deals-section{
 
-    padding:30px 15px;
-
-}
-
-.about-deals{
+    padding:30px 16px;
 
     gap:25px;
+
 }
+
+
 
 .deal-heading h2{
 
-    text-align:center;
+    font-size:28px;
+
 }
+
+
 
 .deal-name h3{
 
     font-size:22px;
-}
-
-.deal-price{
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:8px;
-}
-
-.about-item p{
-
-    font-size:14px;
-}
-
-.d-button{
-
-    width:100%;
-}
-
-/* Filters */
-
-.filters-btn{
-
-    justify-content:center;
-}
-
-.filters-btn button{
-
-    width:45%;
-
-    font-size:14px;
-}
-
-.filter-container{
-
-    grid-template-columns:1fr;
 
 }
 
-.filter-img img{
 
-    height:260px;
+
+.deal-price h4{
+
+    font-size:18px;
+
 }
 
-}
 
-/* ====================================
-   SMALL PHONES
-==================================== */
-
-@media (max-width:380px){
-
-.filters-btn button{
-
-    width:100%;
-}
-
-.deal-heading h2{
-
-    font-size:24px;
-}
-
-.deal-name h3{
-
-    font-size:20px;
-}
 
 .about-item p{
 
     font-size:13px;
+
+    line-height:140%;
+
 }
+
+
+
+.filter-items{
+
+    padding:25px 16px;
+
+}
+
+
+
+.filter-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+
+}
+
+
+
+
+/* Small Mobile */
+
+@media(max-width:380px){
+
+
+
+
+.deal-heading h2{
+
+    font-size:24px;
+
+}
+
+
+
+.deal-name h3{
+
+    font-size:19px;
+
+}
+
+
+
+.filters-btn button{
+
+    font-size:14px;
+
+    padding:8px 10px;
+
+}
+
+
+
+.filter-content h2{
+
+    font-size:13px;
+
+}
+
+
+
+.filter-content h4{
+
+    font-size:16px;
+
+}
+
+}
+
+
+
+
+/* Prevent Image Overflow Everywhere */
+
+img{
+
+max-width:100%;
+
+}
+
+
+
+
+/* Prevent Text Overflow */
+
+h1,
+h2,
+h3,
+h4,
+p,
+a{
+
+overflow-wrap:break-word;
+
+}
+
+
+
+
+/* Remove Horizontal Scroll */
+
+html,
+body{
+
+max-width:100%;
+
+overflow-x:hidden;
 
 }
