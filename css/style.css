@@ -992,60 +992,60 @@ hr.solid{
  Mobile Responsive
 ========================= */
 
+/* Final mobile shop fix */
+
 @media(max-width:600px){
 
-.brands{
-    min-height:auto;
-}
-
-.logo-brands img{
-    width:90px;
-    height:90px;
-}
-
-.about-us{
-    flex-direction:column;
-}
-
-.about-us img{
+.shop-products{
     width:100%;
-    order:2;
+    padding:20px 15px;
+    overflow:hidden;
 }
 
-.aboutus{
+
+.product{
     width:100%;
-    order:1;
 }
 
-.abouts a{
-    width:180px;
-}
-.our-services{
+
+.product-container{
+    display:grid;
+    width:100%;
     grid-template-columns:
-    repeat(1,1fr);
+    repeat(2,minmax(0,1fr));
+    gap:15px;
 }
 
-.services-container .icons{
-    width:120px;
-    height:120px;
+
+.products{
+    width:100%;
+    height:auto;
+    padding:10px;
 }
 
-.follow-us{
-    grid-template-columns:
-    repeat(1,1fr);
+
+.products img{
+    width:100%;
+    height:110px;
+    object-fit:contain;
 }
 
-.social-icons{
+
+.product-content{
+    width:100%;
+}
+
+
+.price-quantity{
+    width:100%;
     justify-content:center;
 }
-    
-.apps{
-    align-items:center;
+
+
+.buttons{
+    justify-content:center;
 }
 
-.about-links{
-    align-items:center;
-}
 }
 
 /* Small Phones */
