@@ -264,7 +264,7 @@ table tr td img{
     }
 
     .shoppingcart{
-        display:flex;
+        /* display:flex; */
         flex-direction:column;
         width:100%;
     }
@@ -280,6 +280,7 @@ table tr td img{
 
     table tr{
         width:100%;
+         display:flex;
     }
 
     .order_summary{
