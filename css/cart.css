@@ -1,18 +1,7 @@
-/* ===============================
-   CART PAGE CSS
-   Works with current cart.html
-================================ */
+/* ============================
+   CART PAGE
+============================ */
 
-
-/* Prevent page overflow */
-html,
-body{
-    max-width:100%;
-    overflow-x:hidden;
-}
-
-
-/* Heading */
 
 .cart-heading{
     width:100%;
@@ -21,93 +10,106 @@ body{
 
 
 .cart-heading h3{
+
     padding:30px 10px;
+
     width:100%;
+
     font-size:30px;
+
     font-weight:500;
+
     line-height:120%;
+
     text-transform:capitalize;
+
     color:var(--primary);
+
 }
 
 
 
-/* Main cart section */
+/* Main wrapper */
 
 .shoppingcart{
+
     width:100%;
+
     max-width:1362px;
 
     display:flex;
+
     align-items:flex-start;
+
     justify-content:center;
 
     gap:30px;
+
 }
 
 
 
-/* Cart table */
+/* IMPORTANT:
+   Do not use display:flex on table
+*/
 
 .shopping-cart{
 
     width:950px;
+
     max-width:100%;
 
     border-radius:4px;
+
     border:1px solid var(--style-color-51);
 
     border-collapse:collapse;
 
-    overflow:hidden;
-
 }
 
 
 
-/* Table rows */
-
-.shopping-cart tr{
-
-    width:100%;
-
-}
-
+/* Table header */
 
 
 .shopping-cart th{
 
     height:50px;
 
-    padding:0 10px;
+    padding:10px;
 
     text-align:center;
 
+    color:var(--primary);
+
     font-size:16px;
+
     font-weight:700;
 
     text-transform:capitalize;
-
-    color:var(--primary);
 
     border-bottom:1px solid var(--style-color-51);
 
 }
 
+
+
+/* Table data */
 
 
 .shopping-cart td{
 
     height:100px;
 
-    padding:8px 10px;
+    padding:8px;
 
     text-align:center;
+
     vertical-align:middle;
 
-    font-size:16px;
-
     color:var(--primary);
+
+    font-size:16px;
 
     border-bottom:1px solid var(--style-color-51);
 
@@ -115,11 +117,13 @@ body{
 
 
 
-/* Product image */
+/* Image */
+
 
 .shopping-cart td img{
 
     width:90px;
+
     height:100px;
 
     object-fit:contain;
@@ -128,44 +132,39 @@ body{
 
 
 
-/* Buttons */
+/* Quantity and delete icons ONLY */
 
-.HomeBtn,
-.checkout,
-.removeAll{
+.shopping-cart td.buttons{
 
-    background:#212529;
+    display:flex;
 
-    color:white;
+    height:100px;
 
-    border:none;
+    justify-content:center;
 
-    padding:6px;
+    align-items:center;
 
-    border-radius:3px;
+    gap:8px;
+
+}
+
+
+
+.fa-minus{
+
+    color:red;
 
     cursor:pointer;
 
-    margin-top:10px;
-
-}
-
-
-.continue_shipping{
-
-    background:var(--secondary);
-
-    border:1px solid var(--secondary);
-
 }
 
 
 
-.removeAll{
+.fa-plus{
 
-    background:green;
+    color:green;
 
-    border:1px solid green;
+    cursor:pointer;
 
 }
 
@@ -175,45 +174,77 @@ body{
 
     color:var(--secondary);
 
+    cursor:pointer;
+
 }
 
 
 
-/* Quantity buttons */
+/* Cart empty button */
 
-.buttons{
+.HomeBtn,
+.continue_shipping,
+.removeAll{
+
+    background:#212529;
+
+    color:white;
+
+    border:none;
+
+    padding:8px 15px;
+
+    border-radius:4px;
+
+    cursor:pointer;
+
+}
+
+
+
+.continue_shipping{
+
+    background:var(--secondary);
+
+}
+
+
+
+.removeAll{
+
+    background:green;
+
+}
+
+
+
+/* Order summary */
+
+
+.order_summary{
+
+    width:363px;
+
+    padding:16px;
 
     display:flex;
 
-    justify-content:center;
+    flex-direction:column;
 
     align-items:center;
 
-    gap:8px;
+    gap:20px;
 
-    font-size:16px;
+    border:1px solid var(--style-color-51);
 
-}
-
-
-.fa-minus{
-
-    color:red;
-
-}
-
-
-.fa-plus{
-
-    color:green;
+    border-radius:4px;
 
 }
 
 
 
-/* Empty cart */
-
-#label{
+.order_summary h4,
+.order_summary h2{
 
     width:100%;
 
@@ -225,21 +256,46 @@ body{
 
 
 
+.order_summary h4{
 
-/* ===============================
-   TABLET
-================================ */
+    border-bottom:2px solid var(--style-color-51);
 
-
-@media(max-width:1100px){
-
-
-.cart-heading h3{
-
-    padding-left:20px;
+    padding-bottom:10px;
 
 }
 
+
+
+.col-2{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:10px;
+
+}
+
+
+
+.col-2 button{
+
+    width:256px;
+
+    height:36px;
+
+}
+
+
+
+/* ============================
+   TABLET
+============================ */
+
+
+@media(max-width:1000px){
 
 
 .shoppingcart{
@@ -252,39 +308,27 @@ body{
 
 .shopping-cart{
 
-    width:100%;
+    width:65%;
 
 }
 
 
 
-.shopping-cart th,
-.shopping-cart td{
+.order_summary{
 
-    font-size:14px;
-
-    padding:8px;
+    width:35%;
 
 }
 
-
-
-.shopping-cart td img{
-
-    width:70px;
-
-    height:90px;
-
-}
 
 
 }
 
 
 
-/* ===============================
+/* ============================
    MOBILE
-================================ */
+============================ */
 
 
 @media(max-width:768px){
@@ -294,17 +338,17 @@ body{
 
     font-size:24px;
 
-    padding:20px 10px;
-
 }
 
 
 
 .shoppingcart{
 
-    width:100%;
+    display:flex;
 
-    display:block;
+    flex-direction:column;
+
+    width:100%;
 
     padding:0 10px;
 
@@ -312,13 +356,14 @@ body{
 
 
 
-/* only table scroll */
+/* table scroll only */
+
 
 .shopping-cart{
 
-    display:block;
-
     width:100%;
+
+    display:block;
 
     overflow-x:auto;
 
@@ -326,20 +371,10 @@ body{
 
 
 
-/* keep six columns aligned */
-
-.shopping-cart thead,
-.shopping-cart tbody{
-
-    width:900px;
-
-}
-
-
-
+.shopping-cart tbody,
 .shopping-cart tr{
 
-    display:table-row;
+    width:900px;
 
 }
 
@@ -348,15 +383,9 @@ body{
 .shopping-cart th,
 .shopping-cart td{
 
-    display:table-cell;
-
-    width:150px;
-
     min-width:150px;
 
-    max-width:150px;
-
-    text-align:center;
+    width:150px;
 
 }
 
@@ -372,37 +401,28 @@ body{
 
 
 
-.buttons{
+.order_summary{
 
-    flex-wrap:nowrap;
+    width:100%;
 
-}
-
-
+    max-width:363px;
 
 }
 
 
 
-/* ===============================
-   SMALL MOBILE
-================================ */
+}
+
+
 
 
 @media(max-width:480px){
 
 
-.cart-heading h3{
+.shopping-cart tbody,
+.shopping-cart tr{
 
-    font-size:22px;
-
-}
-
-
-
-.shopping-cart{
-
-    font-size:13px;
+    width:800px;
 
 }
 
@@ -411,9 +431,11 @@ body{
 .shopping-cart th,
 .shopping-cart td{
 
+    min-width:130px;
+
     width:130px;
 
-    min-width:130px;
+    font-size:13px;
 
 }
 
@@ -428,15 +450,11 @@ body{
 }
 
 
+.col-2 button{
 
-.HomeBtn,
-.checkout,
-.removeAll{
-
-    font-size:12px;
+    width:200px;
 
 }
-
 
 
 }
