@@ -1,6 +1,15 @@
+.cart-heading{
+    max-width:1362px;
+    margin:40px auto 20px;
+    padding:0 30px;
+}
+
+
 .cart-heading h3{
-    padding: 30px 10px;
-    width:1362px;
+    /* padding: 30px 10px; */
+    /* width:1362px; */
+     width:100%;
+    padding:0;
     font-size: 30px;
     font-style: normal;
     font-weight: 500;
@@ -17,7 +26,9 @@ width:1362px; */
      display:flex;
     width:100%;
     max-width:1362px;
-    margin:0 auto;
+    /* margin:0 auto; */
+    margin:40px auto;
+    padding:0 30px;
     gap:30px;
     align-items:flex-start;
 }
@@ -35,6 +46,7 @@ width:1362px; */
 
 table{
     width:100%;
+    border-collapse:collapse;
 }
 
 table tr{
@@ -42,7 +54,8 @@ table tr{
 }
 
 table tr{
-    display: flex;
+    /* display: flex; */
+     display:table-row;
 padding: 8px 0px;
 align-items: flex-start;
 align-self: stretch;
@@ -64,7 +77,7 @@ table tr th{
    letter-spacing: 1px; 
    border-bottom: 1px solid var( --style-color-51);   
 }
-table tr td{
+/* table tr td{
 display: flex;
 height:100px;
 padding: 8px 0px;
@@ -82,12 +95,30 @@ text-transform: capitalize;
 color:var(--primary);
  padding: 0px 15px 0px 41px; 
 border-bottom: 1px solid var(--style-color-51); 
+} */
+
+table th,
+table td{
+    display:table-cell;
+    text-align:center;
+    vertical-align:middle;
+    padding:15px;
+    border-bottom:1px solid var(--style-color-51);
 }
+
 table tr td img{
     width: 90px;
     height: 154px;
     flex: 1 0 0;
 }
+
+table td img{
+    width:80px;
+    height:auto;
+    display:block;
+    margin:auto;
+}
+
 .HomeBtn, .checkout, .removeAll{
     background-color:#212529; 
     color: white;
