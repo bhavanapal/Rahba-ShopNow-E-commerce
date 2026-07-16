@@ -37,15 +37,15 @@ table tr th{
     padding: 0px 50px 0px 50px;
     align-items: center;
    flex: 1 0 0; 
-    font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%;
-text-transform: capitalize;
-text-align: center;
-color: var(--primary);
-letter-spacing: 1px; 
-border-bottom: 1px solid var( --style-color-51);   
+   font-size: 16px;
+   font-style: normal;
+   font-weight: 700;
+   line-height: 150%;
+   text-transform: capitalize;
+   text-align: center;
+   color: var(--primary);
+   letter-spacing: 1px; 
+   border-bottom: 1px solid var( --style-color-51);   
 }
 table tr td{
 display: flex;
@@ -162,11 +162,11 @@ table tr td img{
   @media(max-width:600px){
     .cart-heading h3{
         display: flex;
-width: 350px;
-padding: 16px 0px;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
+        width: 350px;
+        padding: 16px 0px;
+       flex-direction: column;
+       align-items: flex-start;
+       gap: 16px;
     }
   .shoppingcart{
         display: inline-flex;
@@ -177,47 +177,46 @@ gap: 16px;
     }
     .shopping-cart{
       display: flex;  
- padding: 0px 4px;  
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;   
-width:385px;   
- gap: 8px; 
+      padding: 0px 4px;  
+     flex-direction: column;
+    align-items: flex-start;
+    align-self: stretch;   
+    width:385px;   
+   gap: 8px; 
     } 
      table{
         display: flex;
-flex-direction: column;
-align-items: flex-end;
- gap: 8px; 
-
+       flex-direction: column;
+       align-items: flex-end;
+      gap: 8px; 
     }   
    table tr{
        display: flex; 
- padding: 4px 0px; 
-align-items: flex-start;
-align-self: stretch;   
-width:380px; 
+      padding: 4px 0px; 
+     align-items: flex-start;
+     align-self: stretch;   
+    width:380px; 
     } 
     table tr th{
-display: flex;
- width:380px;   
-height:42px;  
- padding: 0px 2px; 
-justify-content: center;
-align-items: center;
-gap: 5px;
- flex: 1 0 0;
+     display: flex;
+     width:380px;   
+     height:42px;  
+     padding: 0px 2px; 
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    flex: 1 0 0;
     }
     table tr td{
         display: flex;
-padding: 4px 0px;
-width:81.3px;
- align-self: stretch; 
-justify-content: center;
-align-items: center; 
- gap: 10px; 
- flex: 1 0 0; 
- flex-direction:column;
+       padding: 4px 0px;
+      width:81.3px;
+     align-self: stretch; 
+     justify-content: center;
+     align-items: center; 
+     gap: 10px; 
+     flex: 1 0 0; 
+     flex-direction:column;
     }
     table tr td img{
         width: 87px;
@@ -225,9 +224,9 @@ align-items: center;
     }
   .cart{
         display:flex;
-align-items:center;
- width: 250px; 
- padding: 0px 4px; 
+       align-items:center;
+      width: 250px; 
+      padding: 0px 4px; 
     } 
 .order_summary{
         display: flex;
@@ -239,12 +238,12 @@ align-items:center;
     }
     .order_summary h4 , h2{
         display: flex;
-      width: 200px;
-    height: 39px; 
-    padding: 4px;
-    justify-content: center;
-align-items: center;
-gap: 4px;
+        width: 200px;
+       height: 39px; 
+      padding: 4px;
+      justify-content: center;
+     align-items: center;
+     gap: 4px;
     }
     .col-2 .continue_shipping, .removeAll{
         display: flex;
