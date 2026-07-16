@@ -325,6 +325,21 @@ header{
 }
 
 
+.cart-heading h3,
+.shoppingcart{
+    width:100%;
+    max-width:1362px;
+    margin:auto;
+}
+
+.shopping-cart{
+    width:100%;
+    max-width:950px;
+}
+
+table tr{
+    width:100%;
+}
 
 /* =====================================
         NAVBAR
