@@ -1,28 +1,28 @@
-/* ==============================
-   CART PAGE COMPLETE RESPONSIVE CSS
-================================ */
+.cart-page{
 
+    overflow-x:hidden;
 
-/* Heading */
-
-.cart-heading{
-    width:100%;
-    max-width:1362px;
-    margin:0 auto;
 }
+
+
+
+.cart-container{
+
+    width:100%;
+
+    max-width:1362px;
+
+    margin:auto;
+
+}
+
 
 
 .cart-heading h3{
 
-    padding:30px 10px;
-
     font-size:30px;
 
-    font-weight:500;
-
-    line-height:120%;
-
-    text-transform:capitalize;
+    padding:30px 10px;
 
     color:var(--primary);
 
@@ -30,35 +30,23 @@
 
 
 
-/* ==============================
-   MAIN CART CONTAINER
-================================ */
-
+/* MAIN */
 
 .shoppingcart{
 
     width:100%;
 
-    max-width:1362px;
-
-    margin:0 auto;
-
     display:flex;
 
-    align-items:flex-start;
-
-    justify-content:center;
-
     gap:30px;
+
+    align-items:flex-start;
 
 }
 
 
 
-/* ==============================
-   TABLE
-================================ */
-
+/* TABLE AREA */
 
 .cart-table-wrapper{
 
@@ -69,15 +57,16 @@
 }
 
 
+
 .shopping-cart{
 
     width:950px;
 
     border-collapse:collapse;
 
-    border:1px solid var(--style-color-51);
-
     background:white;
+
+    border:1px solid var(--style-color-51);
 
 }
 
@@ -93,12 +82,6 @@
 
     white-space:nowrap;
 
-    color:var(--primary);
-
-    font-size:16px;
-
-    font-weight:700;
-
     border-bottom:1px solid var(--style-color-51);
 
 }
@@ -107,7 +90,7 @@
 
 .shopping-cart td{
 
-    height:100px;
+    height:110px;
 
     padding:10px;
 
@@ -115,28 +98,28 @@
 
     vertical-align:middle;
 
-    color:var(--primary);
-
-    font-size:15px;
-
     border-bottom:1px solid var(--style-color-51);
 
 }
 
 
 
-/* Product Image */
-
-
 .shopping-cart td img{
 
-    width:80px;
+    width:70px;
 
-    height:100px;
+    height:90px;
 
     object-fit:contain;
 
-    display:block;
+}
+
+
+
+
+/* keep generated cart content aligned */
+
+.shopping-cart td>*{
 
     margin:auto;
 
@@ -144,10 +127,7 @@
 
 
 
-/* Quantity Buttons */
-
-
-.buttons{
+.shopping-cart .buttons{
 
     display:flex;
 
@@ -155,25 +135,15 @@
 
     align-items:center;
 
-    gap:10px;
-
-}
-
-
-
-.buttons i{
-
-    cursor:pointer;
+    gap:8px;
 
 }
 
 
 
 
-/* ==============================
-   CART SUMMARY
-================================ */
 
+/* SUMMARY */
 
 .cart{
 
@@ -189,19 +159,13 @@
 
     padding:16px;
 
+    border:1px solid var(--style-color-51);
+
     display:flex;
 
     flex-direction:column;
 
-    align-items:center;
-
     gap:20px;
-
-    background:white;
-
-    border:1px solid var(--style-color-51);
-
-    border-radius:4px;
 
 }
 
@@ -212,52 +176,13 @@
 
     width:100%;
 
-    height:auto;
-
     text-align:center;
 
-    color:var(--primary);
-
-    font-size:20px;
-
-    font-weight:500;
-
 }
 
 
-
-.order_summary h4{
-
-    padding-bottom:10px;
-
-    border-bottom:2px solid var(--style-color-51);
-
-}
-
-
-
-
-.pprice{
-
-    width:100%;
-
-    text-align:right;
-
-    font-size:18px;
-
-    font-weight:500;
-
-    color:var(--primary);
-
-}
-
-
-
-/* Summary buttons */
 
 .col-2{
-
-    width:100%;
 
     display:flex;
 
@@ -265,70 +190,27 @@
 
     gap:15px;
 
-    align-items:center;
-
 }
 
 
-.continue_shipping,
-.removeAll{
 
-    width:256px;
+.col-2 button{
 
-    height:40px;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    border-radius:4px;
-
-    cursor:pointer;
-
-    color:white;
+    width:100%;
 
 }
 
 
 
 
+/* TABLET */
 
-.continue_shipping{
-
-    background:var(--secondary);
-
-    border:1px solid var(--secondary);
-
-}
-
-
-
-.removeAll{
-
-    background:green;
-
-    border:1px solid green;
-
-}
-
-
-
-
-/* ==============================
-   TABLET
-================================ */
-
-
-@media(max-width:1100px){
+@media(max-width:1000px){
 
 
 .shoppingcart{
 
     flex-direction:column;
-
-    padding:20px;
 
 }
 
@@ -348,41 +230,20 @@
 
     max-width:363px;
 
-    margin:auto;
+}
 
 }
 
 
 
-}
-
-
-
-/* ==============================
-   MOBILE
-================================ */
-
+/* MOBILE */
 
 @media(max-width:600px){
 
 
+.cart-container{
 
-html,
-body{
-
-    max-width:100%;
-
-    overflow-x:hidden;
-
-}
-
-
-
-.cart-heading{
-
-    width:100%;
-
-    padding:0 15px;
+    padding:0 10px;
 
 }
 
@@ -392,8 +253,6 @@ body{
 
     font-size:24px;
 
-    padding:20px 0;
-
 }
 
 
@@ -401,14 +260,6 @@ body{
 .shoppingcart{
 
     width:100%;
-
-    padding:0 15px;
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:25px;
 
 }
 
@@ -420,41 +271,13 @@ body{
 
     overflow-x:auto;
 
-    -webkit-overflow-scrolling:touch;
-
 }
 
 
 
 .shopping-cart{
 
-    min-width:850px;
-
-}
-
-
-
-.shopping-cart th{
-
-    font-size:14px;
-
-}
-
-
-
-.shopping-cart td{
-
-    font-size:13px;
-
-}
-
-
-
-.shopping-cart td img{
-
-    width:60px;
-
-    height:80px;
+    min-width:900px;
 
 }
 
@@ -463,8 +286,6 @@ body{
 .cart{
 
     width:100%;
-
-    max-width:350px;
 
 }
 
@@ -473,52 +294,6 @@ body{
 .order_summary{
 
     width:100%;
-
-}
-
-
-
-.continue_shipping,
-.removeAll{
-
-    width:220px;
-
-}
-
-
-
-}
-
-
-
-/* ==============================
-   SMALL PHONES
-================================ */
-
-
-@media(max-width:390px){
-
-
-
-.shoppingcart{
-
-    padding:0 10px;
-
-}
-
-
-
-.shopping-cart{
-
-    min-width:820px;
-
-}
-
-
-
-.cart{
-
-    max-width:320px;
 
 }
 
