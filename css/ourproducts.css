@@ -700,3 +700,102 @@ button.active{
 
 
 }
+
+/* FINAL PRODUCT OVERFLOW FIX */
+
+
+*,
+*::before,
+*::after{
+    box-sizing:border-box;
+}
+
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+
+
+.deals-section,
+.filter-items,
+.filter-container,
+.about-deals,
+.abouts-deal,
+.filters{
+    width:100% !important;
+    max-width:100% !important;
+}
+
+
+
+.about-deals img,
+.filter-img img{
+
+    max-width:100% !important;
+
+    height:auto;
+
+}
+
+
+
+.filter-container{
+
+    display:grid !important;
+
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+
+    gap:25px;
+
+}
+
+
+
+.filters{
+
+    min-width:0;
+
+}
+
+
+
+@media(max-width:600px){
+
+
+.deals-section{
+
+    padding:15px;
+
+}
+
+
+
+.about-deals{
+
+    flex-direction:column;
+
+}
+
+
+
+.filter-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.deal-heading h2{
+
+    width:auto !important;
+
+}
+
+
+
+}
