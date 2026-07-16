@@ -729,6 +729,276 @@ header{
 
 }
 
+/* =====================================
+        SHOP NOW RESPONSIVE
+===================================== */
+
+
+.shop-products{
+
+    width:100%;
+
+    max-width:1440px;
+
+    padding:32px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:32px;
+
+}
+
+
+
+.product{
+
+    width:100%;
+
+    max-width:1303px;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.product h2{
+
+    padding:8px;
+
+    font-size:25px;
+
+    font-weight:600;
+
+    line-height:120%;
+
+    text-transform:capitalize;
+
+    color:var(--primary);
+
+}
+
+
+
+.product a{
+
+    padding:8px 4px;
+
+    color:var(--style-color-51);
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+}
+
+
+
+
+
+.product-container{
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:repeat(6,1fr);
+
+    gap:20px;
+
+}
+
+
+
+
+
+.products{
+
+    width:100%;
+
+    min-width:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:var(--white);
+
+    padding:10px;
+
+}
+
+
+
+
+
+.products img{
+
+    width:100%;
+
+    max-width:160px;
+
+    height:125px;
+
+    object-fit:contain;
+
+}
+
+
+
+
+
+.product-content{
+
+    width:100%;
+
+    max-width:160px;
+
+    height:auto;
+
+    padding:4px;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:space-between;
+
+}
+
+
+
+
+
+/* ===========================
+       LAPTOP
+=========================== */
+
+
+@media(max-width:1200px){
+
+
+.product-container{
+
+    grid-template-columns:repeat(4,1fr);
+
+}
+
+
+}
+
+
+
+
+
+/* ===========================
+       TABLET
+=========================== */
+
+
+@media(max-width:768px){
+
+
+.shop-products{
+
+    padding:20px;
+
+}
+
+
+
+.product-container{
+
+    grid-template-columns:repeat(2,1fr);
+
+}
+
+
+
+.product h2{
+
+    font-size:22px;
+
+}
+
+
+}
+
+
+
+
+
+/* ===========================
+       MOBILE
+=========================== */
+
+
+@media(max-width:480px){
+
+
+.shop-products{
+
+    padding:15px;
+
+}
+
+
+
+.product{
+
+    width:100%;
+
+}
+
+
+
+.product h2{
+
+    font-size:20px;
+
+}
+
+
+
+.product-container{
+
+    grid-template-columns:1fr;
+
+}
+
+
+
+.products img{
+
+    height:180px;
+
+}
+
+
+
+.p-button{
+
+    width:100%;
+
+}
+
+
+}
+
 
 
 
