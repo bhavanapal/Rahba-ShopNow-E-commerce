@@ -303,3 +303,164 @@ table tr td img{
 }
 
 }
+
+/* ===============================
+   RESPONSIVE CART FIX
+================================ */
+
+
+/* Large tablets and small laptops */
+@media(max-width:1200px){
+
+.cart-heading h3{
+    width:100%;
+}
+
+
+.shoppingcart{
+    width:100%;
+    padding:0 20px;
+    gap:20px;
+}
+
+
+.shopping-cart{
+    width:70%;
+}
+
+
+.order_summary{
+    width:30%;
+}
+
+
+table tr th{
+    padding:0 20px;
+}
+
+
+table tr td{
+    padding:0 10px;
+}
+
+}
+
+
+/* Tablets */
+@media(max-width:900px){
+
+.shoppingcart{
+    flex-direction:column;
+    align-items:center;
+}
+
+
+.shopping-cart{
+    width:100%;
+}
+
+
+.order_summary{
+    width:100%;
+    max-width:363px;
+}
+
+
+}
+
+
+/* Mobile */
+@media(max-width:600px){
+
+.cart-heading h3{
+    width:100%;
+    padding:16px 10px;
+    font-size:24px;
+}
+
+
+/* keep table alignment */
+.shopping-cart{
+    width:100%;
+    overflow-x:auto;
+}
+
+
+.shoppingcart{
+    width:100%;
+    padding:0 10px;
+}
+
+
+/* prevent column breaking */
+table{
+    min-width:700px;
+}
+
+
+table tr{
+    width:700px;
+}
+
+
+table tr th,
+table tr td{
+    flex:1 0 0;
+}
+
+
+/* image size */
+table tr td img{
+    width:70px;
+    height:90px;
+}
+
+
+.order_summary{
+    width:100%;
+}
+
+
+.col-2 .continue_shipping,
+.col-2 .removeAll{
+    width:200px;
+}
+
+
+.buttons{
+    flex-wrap:wrap;
+}
+
+}
+
+
+/* Small phones */
+@media(max-width:380px){
+
+.cart-heading h3{
+    font-size:22px;
+}
+
+
+table{
+    min-width:650px;
+}
+
+
+table tr{
+    width:650px;
+}
+
+
+table tr th,
+table tr td{
+    font-size:13px;
+}
+
+
+table tr td img{
+    width:60px;
+    height:80px;
+}
+
+}
