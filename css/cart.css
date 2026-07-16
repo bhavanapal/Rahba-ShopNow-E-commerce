@@ -682,7 +682,54 @@ table{
 
 
 }
+}
 
 
+body{
+    overflow-x:hidden !important;
+}
+
+
+.shoppingcart{
+
+    width:100% !important;
+
+    max-width:1362px;
+
+    margin:auto;
+
+}
+
+
+.shopping-cart{
+
+    width:70% !important;
+
+}
+
+
+@media(max-width:600px){
+
+.shoppingcart{
+
+    width:100% !important;
+
+    flex-direction:column;
+
+}
+
+
+.shopping-cart{
+
+    width:100% !important;
+
+}
+
+
+.order_summary{
+
+    width:100% !important;
+
+}
 
 }
