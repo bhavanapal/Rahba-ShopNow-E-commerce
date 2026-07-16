@@ -1,19 +1,18 @@
+/* =========================
+   CART PAGE
+========================= */
+
 .cart-page{
-
+    width:100%;
     overflow-x:hidden;
-
 }
 
 
-
 .cart-container{
-
     width:100%;
-
-    max-width:1362px;
-
+    max-width:1200px;
     margin:auto;
-
+    padding:20px;
 }
 
 
@@ -21,49 +20,40 @@
 .cart-heading h3{
 
     font-size:30px;
-
-    padding:30px 10px;
-
     color:var(--primary);
+    margin-bottom:20px;
 
 }
 
 
-
-/* MAIN */
+/* Layout */
 
 .shoppingcart{
 
     width:100%;
-
     display:flex;
-
     gap:30px;
-
     align-items:flex-start;
 
 }
 
 
-
-/* TABLE AREA */
+/* Table */
 
 .cart-table-wrapper{
 
-    width:950px;
-
+    width:100%;
     overflow-x:auto;
 
 }
 
 
-
 .shopping-cart{
 
-    width:950px;
+    width:100%;
+    min-width:850px;
 
     border-collapse:collapse;
-
     background:white;
 
     border:1px solid var(--style-color-51);
@@ -74,13 +64,13 @@
 
 .shopping-cart th{
 
-    height:50px;
-
-    padding:10px;
+    padding:15px 10px;
 
     text-align:center;
 
-    white-space:nowrap;
+    font-size:15px;
+
+    color:var(--primary);
 
     border-bottom:1px solid var(--style-color-51);
 
@@ -90,9 +80,9 @@
 
 .shopping-cart td{
 
-    height:110px;
+    padding:15px 10px;
 
-    padding:10px;
+    height:100px;
 
     text-align:center;
 
@@ -104,10 +94,9 @@
 
 
 
-.shopping-cart td img{
+.shopping-cart img{
 
     width:70px;
-
     height:90px;
 
     object-fit:contain;
@@ -116,38 +105,13 @@
 
 
 
+/* Summary */
 
-/* keep generated cart content aligned */
-
-.shopping-cart td>*{
-
-    margin:auto;
-
-}
-
-
-
-.shopping-cart .buttons{
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    gap:8px;
-
-}
-
-
-
-
-
-/* SUMMARY */
 
 .cart{
 
-    width:363px;
+    width:350px;
+    flex-shrink:0;
 
 }
 
@@ -157,7 +121,9 @@
 
     width:100%;
 
-    padding:16px;
+    padding:20px;
+
+    background:white;
 
     border:1px solid var(--style-color-51);
 
@@ -175,37 +141,31 @@
 .order_summary h4{
 
     width:100%;
-
     text-align:center;
 
 }
 
 
 
-.col-2{
 
-    display:flex;
+/* Only cart buttons */
 
-    flex-direction:column;
-
-    gap:15px;
-
-}
-
-
-
-.col-2 button{
+.order_summary button{
 
     width:100%;
 
+    height:40px;
+
 }
 
 
 
+/* =========================
+   TABLET
+========================= */
 
-/* TABLET */
 
-@media(max-width:1000px){
+@media(max-width:900px){
 
 
 .shoppingcart{
@@ -215,35 +175,31 @@
 }
 
 
-
-.cart-table-wrapper{
-
-    width:100%;
-
-}
-
-
-
 .cart{
 
     width:100%;
+    max-width:350px;
 
-    max-width:363px;
+    margin:auto;
 
 }
 
+
 }
 
 
 
-/* MOBILE */
+/* =========================
+   MOBILE
+========================= */
+
 
 @media(max-width:600px){
 
 
 .cart-container{
 
-    padding:0 10px;
+    padding:15px;
 
 }
 
@@ -277,7 +233,7 @@
 
 .shopping-cart{
 
-    min-width:900px;
+    min-width:750px;
 
 }
 
@@ -296,7 +252,6 @@
     width:100%;
 
 }
-
 
 
 }
