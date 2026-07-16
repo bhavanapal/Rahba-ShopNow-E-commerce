@@ -372,64 +372,83 @@ table tr td{
 /* Mobile */
 @media(max-width:600px){
 
-.cart-heading h3{
-    width:100%;
-    padding:16px 10px;
-    font-size:24px;
-}
+    .cart-heading h3{
+        width:100%;
+        padding:16px 10px;
+        font-size:24px;
+    }
 
 
-/* keep table alignment */
-.shopping-cart{
-    width:100%;
-    overflow-x:auto;
-}
+    .shoppingcart{
+        width:100%;
+        flex-direction:column;
+        padding:0 10px;
+        gap:20px;
+    }
 
 
-.shoppingcart{
-    width:100%;
-    padding:0 10px;
-}
+    .shopping-cart{
+        width:100%;
+        overflow-x:auto;
+    }
 
 
-/* prevent column breaking */
-table{
-    min-width:700px;
-}
+    /* Keep same column alignment */
+    table{
+        width:650px;
+        table-layout:fixed;
+    }
 
 
-table tr{
-    width:700px;
-}
+    table tr{
+        width:650px;
+        display:flex;
+    }
 
 
-table tr th,
-table tr td{
-    flex:1 0 0;
-}
+    table tr th,
+    table tr td{
+        width:130px;
+        min-width:130px;
+        max-width:130px;
+        flex:none;
+        padding:8px;
+        justify-content:center;
+        align-items:center;
+        text-align:center;
+        overflow:hidden;
+    }
 
 
-/* image size */
-table tr td img{
-    width:70px;
-    height:90px;
-}
+    table tr th{
+        height:42px;
+        font-size:13px;
+    }
 
 
-.order_summary{
-    width:100%;
-}
+    table tr td{
+        height:100px;
+        font-size:13px;
+    }
 
 
-.col-2 .continue_shipping,
-.col-2 .removeAll{
-    width:200px;
-}
+    table tr td img{
+        width:60px;
+        height:80px;
+        object-fit:contain;
+    }
 
 
-.buttons{
-    flex-wrap:wrap;
-}
+    .order_summary{
+        width:100%;
+        max-width:360px;
+    }
+
+
+    .buttons{
+        flex-wrap:wrap;
+    }
+
 
 }
 
