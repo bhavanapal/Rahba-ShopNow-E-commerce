@@ -159,96 +159,157 @@ table tr td img{
 
   /* media queries */
 
-  @media(max-width:600px){
+ /* =========================
+   Laptop (1200px and below)
+========================= */
+@media (max-width:1200px){
+
     .cart-heading h3{
-        display: flex;
-        width: 350px;
-        padding: 16px 0px;
-       flex-direction: column;
-       align-items: flex-start;
-       gap: 16px;
+        width:100%;
     }
-  .shoppingcart{
-        display: inline-flex;
-         width: 600px;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 8px; 
+
+    .shoppingcart{
+        width:100%;
+        gap:20px;
+        justify-content:space-between;
     }
+
     .shopping-cart{
-      display: flex;  
-      padding: 0px 4px;  
-     flex-direction: column;
-    align-items: flex-start;
-    align-self: stretch;   
-    width:385px;   
-   gap: 8px; 
-    } 
-     table{
-        display: flex;
-       flex-direction: column;
-       align-items: flex-end;
-      gap: 8px; 
-    }   
-   table tr{
-       display: flex; 
-      padding: 4px 0px; 
-     align-items: flex-start;
-     align-self: stretch;   
-    width:380px; 
-    } 
-    table tr th{
-     display: flex;
-     width:380px;   
-     height:42px;  
-     padding: 0px 2px; 
-    justify-content: center;
-    align-items: center;
-    gap: 5px;
-    flex: 1 0 0;
+        width:70%;
     }
-    table tr td{
-        display: flex;
-       padding: 4px 0px;
-      width:81.3px;
-     align-self: stretch; 
-     justify-content: center;
-     align-items: center; 
-     gap: 10px; 
-     flex: 1 0 0; 
-     flex-direction:column;
+
+    table tr{
+        width:100%;
     }
-    table tr td img{
-        width: 87px;
-        height: 93px;
+
+    .order_summary{
+        width:30%;
     }
-  .cart{
+
+}
+
+
+/* =========================
+   Tablet (992px and below)
+========================= */
+@media (max-width:992px){
+
+    .cart-heading h3{
+        width:100%;
+        font-size:28px;
+    }
+
+    .shoppingcart{
         display:flex;
-       align-items:center;
-      width: 250px; 
-      padding: 0px 4px; 
-    } 
-.order_summary{
-        display: flex;
-        width: 200px;
-        padding: 16px 0px;
-        flex-direction: column;
-        align-items: center;
-        gap: 16px;
+        flex-direction:column;
+        width:100%;
+        gap:20px;
     }
-    .order_summary h4 , h2{
-        display: flex;
-        width: 200px;
-       height: 39px; 
-      padding: 4px;
-      justify-content: center;
-     align-items: center;
-     gap: 4px;
+
+    .shopping-cart{
+        width:100%;
     }
-    .col-2 .continue_shipping, .removeAll{
-        display: flex;
-        width: 200px;
-        padding: 16px;
-        margin-top: 10px;
+
+    table{
+        width:100%;
     }
-  }
+
+    table tr{
+        width:100%;
+    }
+
+    table tr th{
+        padding:15px;
+        font-size:15px;
+    }
+
+    table tr td{
+        padding:10px;
+        font-size:15px;
+    }
+
+    .order_summary{
+        width:100%;
+    }
+
+}
+
+
+/* =========================
+   Mobile (768px and below)
+========================= */
+@media (max-width:768px){
+
+    .cart-heading h3{
+        width:100%;
+        padding:20px 10px;
+        font-size:24px;
+    }
+
+    .shoppingcart{
+        display:flex;
+        flex-direction:column;
+        width:100%;
+    }
+
+    .shopping-cart{
+        width:100%;
+        overflow-x:auto;
+    }
+
+    table{
+        min-width:700px;
+    }
+
+    table tr{
+        width:100%;
+    }
+
+    .order_summary{
+        width:100%;
+        padding:20px;
+    }
+
+    .order_summary h4,
+    .order_summary h2{
+        width:100%;
+    }
+
+    .col-2 .continue_shipping,
+    .removeAll{
+        width:100%;
+    }
+
+}
+
+
+/* =========================
+   Small Mobile (480px and below)
+========================= */
+@media (max-width:480px){
+
+    .cart-heading h3{
+        font-size:22px;
+        padding:15px;
+    }
+
+    .buttons{
+        flex-direction:column;
+        gap:10px;
+    }
+
+    .HomeBtn,
+    .checkout,
+    .removeAll{
+        width:100%;
+    }
+
+    table{
+        min-width:650px;
+    }
+
+    .order_summary{
+        width:100%;
+    }
+
+}
