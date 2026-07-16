@@ -6,7 +6,6 @@
 .cart-heading h3{
 
     width:100%;
-
     max-width:1362px;
 
     margin:auto;
@@ -28,7 +27,11 @@
 
 
 
+
+/* MAIN CART AREA */
+
 .shoppingcart{
+
 
     width:100%;
 
@@ -38,35 +41,46 @@
 
     padding:10px;
 
+
     display:flex;
 
     align-items:flex-start;
 
     gap:30px;
 
+
 }
 
 
 
 
+
+/* CART TABLE */
+
 .shopping-cart{
 
+
     width:70%;
+
 
     display:flex;
 
     flex-direction:column;
 
+
     gap:8px;
+
 
     border-radius:4px;
 
+
     border:1px solid var(--style-color-51);
+
 
     overflow-x:auto;
 
-}
 
+}
 
 
 
@@ -74,9 +88,11 @@
 
 table{
 
+
     width:100%;
 
     border-collapse:collapse;
+
 
 }
 
@@ -84,13 +100,18 @@ table{
 
 table tr{
 
+
     width:100%;
+
 
     display:flex;
 
+
     align-items:center;
 
+
     padding:8px 0;
+
 
 }
 
@@ -98,34 +119,44 @@ table tr{
 
 table tr th{
 
+
     flex:1;
+
 
     height:50px;
 
+
     display:flex;
 
+
     justify-content:center;
+
 
     align-items:center;
 
 
-    padding:0 20px;
+    padding:0 15px;
 
 
     font-size:16px;
 
+
     font-weight:700;
 
+
+    line-height:150%;
+
+
     text-transform:capitalize;
+
 
     color:var(--primary);
 
 
     border-bottom:1px solid var(--style-color-51);
 
+
 }
-
-
 
 
 
@@ -140,7 +171,9 @@ table tr td{
 
     display:flex;
 
+
     justify-content:center;
+
 
     align-items:center;
 
@@ -153,13 +186,23 @@ table tr td{
 
     font-size:16px;
 
+
+    font-weight:400;
+
+
+    line-height:150%;
+
+
+    text-transform:capitalize;
+
+
     color:var(--primary);
 
 
     border-bottom:1px solid var(--style-color-51);
 
-}
 
+}
 
 
 
@@ -179,7 +222,6 @@ table tr td img{
 
 
 
-
 /* BUTTONS */
 
 
@@ -190,17 +232,24 @@ table tr td img{
 
     background:#212529;
 
+
     color:white;
+
 
     border:none;
 
+
     padding:6px;
+
 
     border-radius:3px;
 
+
     cursor:pointer;
 
+
     margin-top:10px;
+
 
 }
 
@@ -208,9 +257,12 @@ table tr td img{
 
 .continue_shipping{
 
+
     background:var(--secondary);
 
+
     border:1px solid var(--secondary);
+
 
 }
 
@@ -218,9 +270,12 @@ table tr td img{
 
 .removeAll{
 
+
     background:green;
 
+
     border:1px solid green;
+
 
 }
 
@@ -228,7 +283,9 @@ table tr td img{
 
 .fa-trash-can{
 
+
     color:var(--secondary);
+
 
 }
 
@@ -241,17 +298,26 @@ table tr td img{
 
     display:flex;
 
+
     flex-direction:row;
+
 
     align-items:center;
 
+
     justify-content:center;
+
 
     gap:8px;
 
+
     font-size:16px;
 
+
 }
+
+
+
 
 
 /* ================================
@@ -264,12 +330,15 @@ table tr td img{
 
     width:30%;
 
+
     max-width:363px;
 
 
     display:flex;
 
+
     flex-direction:column;
+
 
     align-items:center;
 
@@ -294,12 +363,12 @@ table tr td img{
 
 
 
-
 .order_summary h4,
 .order_summary h2{
 
 
     width:100%;
+
 
     height:39px;
 
@@ -329,11 +398,11 @@ table tr td img{
 
 
 
-
 .order_summary h4{
 
 
     border-bottom:2px solid var(--style-color-51);
+
 
 }
 
@@ -345,15 +414,18 @@ table tr td img{
 
     color:var(--primary);
 
+
     text-align:right;
+
 
     font-size:18px;
 
+
     font-weight:500;
 
-    line-height:120%;
 
 }
+
 
 
 
@@ -367,6 +439,7 @@ table tr td img{
 
     width:256px;
 
+
     height:36px;
 
 
@@ -375,22 +448,20 @@ table tr td img{
 
     justify-content:center;
 
+
     align-items:center;
 
 
     border-radius:4px;
 
 
-    color:var(--style-color-1);
+    color:white;
 
 
     font-size:14px;
 
 
     font-weight:500;
-
-
-    cursor:pointer;
 
 
 }
@@ -400,22 +471,18 @@ table tr td img{
 
 
 /* ================================
-        TABLET DEVICES
-        768px - 1024px
+        TABLET
 ================================ */
 
 
 @media(max-width:1024px){
 
 
+
 .shoppingcart{
 
 
     flex-direction:column;
-
-    width:100%;
-
-    padding:20px;
 
 
 }
@@ -432,13 +499,16 @@ table tr td img{
 
 
 
-
 .order_summary{
 
 
     width:100%;
 
-    max-width:none;
+
+    max-width:400px;
+
+
+    margin:auto;
 
 
 }
@@ -446,15 +516,14 @@ table tr td img{
 
 
 }
+
 
 
 
 
 /* ================================
-        MOBILE DEVICES
-        600px
+        MOBILE
 ================================ */
-
 
 
 @media(max-width:600px){
@@ -464,16 +533,15 @@ table tr td img{
 html,
 body{
 
+
     overflow-x:hidden;
+
 
 }
 
 
 
 .cart-heading h3{
-
-
-    width:100%;
 
 
     padding:20px;
@@ -483,8 +551,6 @@ body{
 
 
 }
-
-
 
 
 
@@ -500,12 +566,7 @@ body{
     flex-direction:column;
 
 
-    gap:20px;
-
-
 }
-
-
 
 
 
@@ -523,6 +584,8 @@ body{
 
 
 
+/* keep table readable */
+
 
 table{
 
@@ -534,15 +597,10 @@ table{
 
 
 
-
-
 table tr th{
 
 
     font-size:14px;
-
-
-    padding:8px;
 
 
 }
@@ -553,9 +611,6 @@ table tr td{
 
 
     font-size:14px;
-
-
-    padding:8px;
 
 
 }
@@ -575,39 +630,22 @@ table tr td img{
 
 
 
-
-
-.buttons{
-
-
-    flex-wrap:wrap;
-
-
-}
-
-
-
-
 .order_summary{
 
 
     width:100%;
 
 
-    padding:15px;
+    max-width:none;
 
 
 }
 
 
 
-
-
 .order_summary h4,
 .order_summary h2{
 
-
-    width:100%;
 
     font-size:18px;
 
@@ -626,17 +664,15 @@ table tr td img{
 }
 
 
-
 }
+
 
 
 
 
 /* ================================
         SMALL MOBILE
-        320px - 400px
 ================================ */
-
 
 
 @media(max-width:400px){
@@ -653,8 +689,6 @@ table tr td img{
 
 
 
-
-
 .shoppingcart{
 
 
@@ -662,7 +696,6 @@ table tr td img{
 
 
 }
-
 
 
 table{
@@ -674,62 +707,5 @@ table{
 }
 
 
-
-.order_summary{
-
-
-    width:100%;
-
-
-}
-}
-
-
-body{
-    overflow-x:hidden !important;
-}
-
-
-.shoppingcart{
-
-    width:100% !important;
-
-    max-width:1362px;
-
-    margin:auto;
-
-}
-
-
-.shopping-cart{
-
-    width:70% !important;
-
-}
-
-
-@media(max-width:600px){
-
-.shoppingcart{
-
-    width:100% !important;
-
-    flex-direction:column;
-
-}
-
-
-.shopping-cart{
-
-    width:100% !important;
-
-}
-
-
-.order_summary{
-
-    width:100% !important;
-
-}
 
 }
