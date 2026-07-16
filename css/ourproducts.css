@@ -6,20 +6,16 @@
 .deals-section{
 
     width:100%;
-
     max-width:1368px;
 
-    margin:auto;
-
-    display:flex;
-
-    flex-direction:column;
-
-    align-items:flex-start;
-
-    gap:32px;
+    margin:0 auto;
 
     padding:20px;
+
+    display:flex;
+    flex-direction:column;
+
+    gap:32px;
 
 }
 
@@ -43,16 +39,15 @@
 
 
 
-
 .about-deals{
 
     width:100%;
 
     display:flex;
 
-    align-items:flex-start;
+    align-items:center;
 
-    gap:16px;
+    gap:30px;
 
 }
 
@@ -62,35 +57,37 @@
 
     width:65%;
 
+    max-width:886px;
+
     height:auto;
 
-    max-height:502px;
-
     object-fit:cover;
+
+    border-radius:8px;
 
 }
 
 
 
+.abouts-deal{
 
-
-.abouts-deal,
-.deal-name,
-.about-item{
+    flex:1;
 
     display:flex;
 
     flex-direction:column;
 
-    align-items:flex-start;
-
-    gap:16px;
+    gap:20px;
 
 }
 
 
 
 .deal-name{
+
+    display:flex;
+
+    flex-direction:column;
 
     gap:12px;
 
@@ -106,9 +103,11 @@
 
     font-weight:600;
 
-    color:var(--primary);
+    line-height:120%;
 
     text-transform:capitalize;
+
+    color:var(--primary);
 
 }
 
@@ -116,7 +115,7 @@
 
 .deal-price{
 
-    width:129px;
+    width:130px;
 
     display:flex;
 
@@ -140,11 +139,25 @@
 
 
 
+.about-item{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
 .about-item p{
 
     width:100%;
 
     max-width:466px;
+
+    height:auto;
 
     font-size:12px;
 
@@ -156,13 +169,14 @@
 
 
 
-
-
 .d-button{
 
     width:265px;
 
+    max-width:100%;
+
     height:36px;
+
 
     display:flex;
 
@@ -170,7 +184,9 @@
 
     align-items:center;
 
+
     padding:16px 18px;
+
 
     border-radius:4px;
 
@@ -190,7 +206,7 @@
 
 
 /* =====================================
-        FILTER SECTION
+        FILTER BUTTON
 ===================================== */
 
 
@@ -198,11 +214,16 @@
 
     width:100%;
 
+    max-width:1368px;
+
+    margin:auto;
+
+    padding:20px;
+
+
     display:flex;
 
     flex-direction:column;
-
-    align-items:flex-end;
 
     gap:32px;
 
@@ -212,11 +233,15 @@
 
 .filters-btn{
 
+    width:100%;
+
     display:flex;
+
+    justify-content:flex-end;
 
     flex-wrap:wrap;
 
-    gap:8px;
+    gap:10px;
 
 }
 
@@ -228,9 +253,9 @@
 
     border:none;
 
-    outline:auto;
+    background:white;
 
-    background:var(--white);
+    outline:auto;
 
     font-size:18px;
 
@@ -250,8 +275,9 @@ button.active{
 
 }
 
-
-
+/* =====================================
+        FILTER PRODUCTS
+===================================== */
 
 
 .filter-container{
@@ -268,21 +294,22 @@ button.active{
 
 
 
-
-
 .filters{
 
     width:100%;
 
+    min-width:0;
+
+    background:#fff;
+
     padding:8px 4px;
 
-    background:white;
 
     display:flex;
 
     flex-direction:column;
 
-    gap:20px;
+    gap:15px;
 
 }
 
@@ -301,6 +328,12 @@ button.active{
 
     width:100%;
 
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
 }
 
 
@@ -309,13 +342,13 @@ button.active{
 
     width:100%;
 
-    height:360px;
+    max-width:303px;
+
+    height:361px;
 
     object-fit:contain;
 
 }
-
-
 
 
 
@@ -325,11 +358,12 @@ button.active{
 
     padding:4px;
 
+
     display:flex;
 
     flex-direction:column;
 
-    gap:8px;
+    gap:10px;
 
 }
 
@@ -337,17 +371,24 @@ button.active{
 
 .filter-content h2{
 
-    height:40px;
+    width:100%;
+
+    min-height:40px;
+
 
     padding:8px 0;
+
 
     font-size:14px;
 
     font-weight:300;
 
-    color:var(--primary);
+    line-height:120%;
+
 
     text-transform:capitalize;
+
+    color:var(--primary);
 
 }
 
@@ -356,6 +397,10 @@ button.active{
 .filter-content .star{
 
     display:flex;
+
+    justify-content:center;
+
+    align-items:center;
 
     gap:4px;
 
@@ -379,11 +424,13 @@ button.active{
 
     font-weight:500;
 
+    line-height:120%;
+
+    text-transform:capitalize;
+
     color:var(--primary);
 
 }
-
-
 
 
 
@@ -398,20 +445,18 @@ button.active{
 @media(max-width:1200px){
 
 
-.about-deals img{
+    .about-deals img{
 
-    width:55%;
+        width:55%;
 
-}
+    }
 
 
+    .filter-container{
 
-.filter-container{
+        grid-template-columns:repeat(3,1fr);
 
-    grid-template-columns:repeat(3,1fr);
-
-}
-
+    }
 
 
 }
@@ -430,89 +475,92 @@ button.active{
 @media(max-width:768px){
 
 
+    .deals-section{
 
-.deals-section{
+        padding:16px;
 
-    padding:20px;
+    }
+
+
+
+    .deal-heading h2{
+
+        font-size:30px;
+
+    }
+
+
+
+    .about-deals{
+
+        flex-direction:column;
+
+        align-items:center;
+
+    }
+
+
+
+    .about-deals img{
+
+        width:100%;
+
+        max-width:100%;
+
+    }
+
+
+
+    .abouts-deal{
+
+        width:100%;
+
+    }
+
+
+
+    .about-item p{
+
+        max-width:100%;
+
+    }
+
+
+
+    .filter-items{
+
+        padding:16px;
+
+    }
+
+
+
+    .filters-btn{
+
+        justify-content:center;
+
+    }
+
+
+
+    .filter-container{
+
+        grid-template-columns:repeat(2,1fr);
+
+        gap:20px;
+
+    }
+
+
+
+    .filter-img img{
+
+        height:260px;
+
+    }
+
 
 }
-
-
-
-.deal-heading h2{
-
-    font-size:28px;
-
-}
-
-
-
-.about-deals{
-
-    flex-direction:column;
-
-}
-
-
-
-.about-deals img{
-
-    width:100%;
-
-}
-
-
-
-.abouts-deal{
-
-    width:100%;
-
-}
-
-
-
-.d-button{
-
-    width:220px;
-
-}
-
-
-
-
-
-.filter-items{
-
-    align-items:center;
-
-}
-
-
-
-.filter-container{
-
-    grid-template-columns:repeat(2,1fr);
-
-    gap:20px;
-
-}
-
-
-
-.filter-img img{
-
-    height:250px;
-
-}
-
-
-
-}
-
-
-
-
-
 
 
 /* =====================================
@@ -523,279 +571,256 @@ button.active{
 @media(max-width:480px){
 
 
+    html,
+    body{
 
-.deals-section{
+        width:100%;
 
-    width:100%;
+        max-width:100%;
 
-    padding:15px;
+        overflow-x:hidden;
 
-    gap:20px;
+    }
+
+
+
+    .deals-section{
+
+        width:100%;
+
+        padding:15px;
+
+        gap:20px;
+
+    }
+
+
+
+    .deal-heading h2{
+
+        font-size:24px;
+
+        padding:5px;
+
+    }
+
+
+
+    .about-deals{
+
+        width:100%;
+
+        flex-direction:column;
+
+        gap:20px;
+
+    }
+
+
+
+    .about-deals img{
+
+        width:100%;
+
+        height:auto;
+
+    }
+
+
+
+    .deal-name h3{
+
+        font-size:20px;
+
+    }
+
+
+
+    .deal-price h4{
+
+        font-size:18px;
+
+    }
+
+
+
+    .d-button{
+
+        width:100%;
+
+    }
+
+
+
+
+    /* FILTER */
+
+
+    .filter-items{
+
+        width:100%;
+
+        padding:15px;
+
+        gap:20px;
+
+    }
+
+
+
+    .filters-btn{
+
+        width:100%;
+
+        justify-content:center;
+
+    }
+
+
+
+    .filters-btn button{
+
+        font-size:14px;
+
+    }
+
+
+
+    .filter-container{
+
+        width:100%;
+
+        grid-template-columns:1fr;
+
+        gap:20px;
+
+    }
+
+
+
+    .filters{
+
+        width:100%;
+
+    }
+
+
+
+    .filter-img img{
+
+        width:100%;
+
+        height:230px;
+
+    }
+
+
+
+    .filter-content h2{
+
+        font-size:13px;
+
+    }
+
+
+
+    .filter-content h4{
+
+        font-size:16px;
+
+    }
+
 
 }
 
 
-
-.deal-heading h2{
-
-    font-size:22px;
-
-}
-
-
-
-.about-deals{
-
-    width:100%;
-
-}
-
-
-
-.about-deals img{
-
-    width:100%;
-
-    height:auto;
-
-}
-
-
-
-
-
-.deal-name h3{
-
-    font-size:20px;
-
-}
-
-
-
-
-
-.deal-price h4{
-
-    font-size:18px;
-
-}
-
-
-
-.about-item p{
-
-    font-size:12px;
-
-}
-
-
-
-
-
-.d-button{
-
-    width:100%;
-
-}
-
-
-
-
-
-.filter-items{
-
-    width:100%;
-
-    padding:20px 0;
-
-}
-
-
-
-.filters-btn button{
-
-    font-size:14px;
-
-}
-
-
-
-
-
-.filter-container{
-
-    grid-template-columns:1fr;
-
-    width:100%;
-
-}
-
-
-
-.filters{
-
-    width:100%;
-
-}
-
-
-
-.filter-img img{
-
-    height:220px;
-
-}
-
-
-
-.filter-content h2{
-
-    font-size:13px;
-
-}
-
-
-
-.filter-content h4{
-
-    font-size:16px;
-
-}
-
-
-
-}
 
 
 
 
 
 /* =====================================
-        SMALL PHONE
+        SMALL MOBILE
 ===================================== */
 
 
 @media(max-width:320px){
 
 
-.deal-heading h2{
+    .deal-heading h2{
 
-    font-size:20px;
+        font-size:20px;
+
+    }
+
+
+
+    .deal-name h3{
+
+        font-size:18px;
+
+    }
+
+
+
+    .filters-btn button{
+
+        width:100%;
+
+    }
+
+
+
+    .filter-img img{
+
+        height:200px;
+
+    }
+
 
 }
 
 
-.filters-btn{
-
-    justify-content:center;
-
-}
 
 
-.filter-img img{
-
-    height:200px;
-
-}
 
 
-}
 
-/* FINAL PRODUCT OVERFLOW FIX */
+/* =====================================
+        FINAL OVERFLOW PROTECTION
+===================================== */
 
 
 *,
 *::before,
 *::after{
+
     box-sizing:border-box;
+
 }
 
 
-html,
-body{
-    width:100%;
+
+img,
+svg{
+
     max-width:100%;
+
+}
+
+
+
+section,
+div{
+
+    max-width:100%;
+
+}
+
+
+
+body{
+
     overflow-x:hidden;
-}
-
-
-
-.deals-section,
-.filter-items,
-.filter-container,
-.about-deals,
-.abouts-deal,
-.filters{
-    width:100% !important;
-    max-width:100% !important;
-}
-
-
-
-.about-deals img,
-.filter-img img{
-
-    max-width:100% !important;
-
-    height:auto;
-
-}
-
-
-
-.filter-container{
-
-    display:grid !important;
-
-    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
-
-    gap:25px;
-
-}
-
-
-
-.filters{
-
-    min-width:0;
-
-}
-
-
-
-@media(max-width:600px){
-
-
-.deals-section{
-
-    padding:15px;
-
-}
-
-
-
-.about-deals{
-
-    flex-direction:column;
-
-}
-
-
-
-.filter-container{
-
-    grid-template-columns:1fr;
-
-}
-
-
-
-.deal-heading h2{
-
-    width:auto !important;
-
-}
-
-
 
 }
