@@ -330,92 +330,158 @@
       MOBILE
 ========================= */
 
-
 @media(max-width:600px){
 
-
-.cart-heading{
-
-    width:100%;
-
-}
-
-
 .cart-heading h3{
-
     padding:20px 15px;
-
     font-size:24px;
-
 }
 
 
+/* Main wrapper */
 
 .shoppingcart{
-
     width:100%;
-
     padding:10px;
-
+    display:flex;
     flex-direction:column;
-
+    gap:20px;
 }
 
 
+/* Convert table into cards */
 
 .shopping-cart{
-
     width:100%;
-
-    overflow-x:auto;
-
+    border:none;
+    display:block;
 }
 
+
+.shopping-cart thead{
+    display:none;
+}
+
+
+.shopping-cart tbody{
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
 
 
 .shopping-cart tr{
 
+    display:flex;
+    flex-direction:column;
 
-    grid-template-columns:
-    90px
-    130px
-    80px
-    80px
-    90px
-    80px;
+    width:100%;
 
+    padding:15px;
 
-    min-width:550px;
+    border:1px solid var(--style-color-51);
 
+    border-radius:8px;
 
-}
+    background:white;
 
-
-
-.shopping-cart th{
-
-    font-size:13px;
+    gap:12px;
 
 }
 
+
+/* Each cell */
 
 .shopping-cart td{
 
-    font-size:13px;
+    width:100%;
 
+    min-height:auto;
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    padding:8px;
+
+    font-size:14px;
+
+    border:none;
+
+    text-align:right;
+
+}
+
+
+.shopping-cart td::before{
+
+    font-weight:600;
+
+    color:var(--primary);
+
+    text-transform:capitalize;
+
+}
+
+
+/* Labels */
+
+.shopping-cart td:nth-child(1)::before{
+    content:"Product";
+}
+
+
+.shopping-cart td:nth-child(2)::before{
+    content:"Product Name";
+}
+
+
+.shopping-cart td:nth-child(3)::before{
+    content:"Quantity";
+}
+
+
+.shopping-cart td:nth-child(4)::before{
+    content:"Price";
+}
+
+
+.shopping-cart td:nth-child(5)::before{
+    content:"Total Price";
+}
+
+
+.shopping-cart td:nth-child(6)::before{
+    content:"Delete";
 }
 
 
 
 .shopping-cart td img{
 
-    width:60px;
-
+    width:70px;
     height:80px;
+
+    object-fit:contain;
 
 }
 
 
+
+/* quantity alignment */
+
+.buttons{
+
+    justify-content:flex-end;
+
+}
+
+
+
+/* order summary */
 
 .cart{
 
@@ -424,25 +490,45 @@
 }
 
 
-
 .order_summary{
-
 
     width:100%;
 
     padding:15px;
 
+}
+
+
+.order_summary h4,
+.order_summary h2{
+
+    width:100%;
+
+    font-size:18px;
 
 }
 
 
 
-.col-2 button{
+.col-2{
+
+    width:100%;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:12px;
+
+}
+
+
+.continue_shipping,
+.removeAll{
 
     width:100%;
 
 }
-
 
 
 }
