@@ -2275,6 +2275,82 @@ hr.solid{
         MOBILE
 ===================================== */
 
+@media(max-width:600px){
+
+html,
+body{
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+
+body{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+}
+
+
+header,
+main,
+section,
+footer{
+    width:100%;
+    max-width:100%;
+}
+
+
+.section-1{
+    width:100%;
+    margin:0;
+}
+
+
+.slider-container{
+
+    width:100%;
+    transform:none;
+
+}
+
+
+.slide img{
+
+    width:100%;
+    height:auto;
+
+}
+
+
+.slider-content{
+
+    width:90%;
+    left:5%;
+}
+
+
+.new-release,
+.brands,
+.about-us,
+.our-services,
+.footer-section{
+
+    width:100%;
+
+}
+
+
+.about-us img{
+
+    width:100%;
+    height:auto;
+
+}
+
+
+}
+
 
 @media(max-width:480px){
 
