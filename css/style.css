@@ -3447,11 +3447,3 @@ img{
 }
 
 
-* {
-    outline: 1px solid red;
-}
-
-html, body {
-    overflow-x: hidden !important;
-    width: 100% !important;
-}
