@@ -343,3 +343,238 @@ font-size:22px;
 
 
 }
+
+/* ===========================
+   CART FINAL FIX
+=========================== */
+
+
+/* remove table uneven height */
+
+.shopping-cart{
+    table-layout: fixed;
+}
+
+
+.shopping-cart th,
+.shopping-cart td{
+
+    vertical-align: middle;
+    text-align:center;
+
+}
+
+
+/* fixed column sizes */
+
+.shopping-cart th:nth-child(1),
+.shopping-cart td:nth-child(1){
+
+    width:120px;
+
+}
+
+
+.shopping-cart th:nth-child(2),
+.shopping-cart td:nth-child(2){
+
+    width:220px;
+
+}
+
+
+.shopping-cart th:nth-child(3),
+.shopping-cart td:nth-child(3){
+
+    width:130px;
+
+}
+
+
+.shopping-cart th:nth-child(4),
+.shopping-cart td:nth-child(4){
+
+    width:120px;
+
+}
+
+
+.shopping-cart th:nth-child(5),
+.shopping-cart td:nth-child(5){
+
+    width:130px;
+
+}
+
+
+.shopping-cart th:nth-child(6),
+.shopping-cart td:nth-child(6){
+
+    width:120px;
+
+}
+
+
+
+/* product image alignment */
+
+.shopping-cart td img{
+
+    display:block;
+    margin:auto;
+    object-fit:contain;
+
+}
+
+
+
+/* quantity buttons alignment */
+
+.buttons{
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:40px;
+
+}
+
+
+
+/* order summary buttons spacing */
+
+.order_summary .col-2{
+
+    width:100%;
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+    align-items:center;
+
+}
+
+
+.order_summary button{
+
+    margin:0;
+}
+
+
+
+/* ===========================
+   MOBILE FIX
+=========================== */
+
+
+@media(max-width:600px){
+
+
+html,
+body{
+
+    width:100%;
+    max-width:100%;
+    overflow-x:hidden;
+
+}
+
+
+.cart-heading,
+.shoppingcart{
+
+    width:100%;
+    max-width:100%;
+    padding-left:12px;
+    padding-right:12px;
+
+}
+
+
+
+.shoppingcart{
+
+    display:flex;
+    flex-direction:column;
+
+}
+
+
+
+.cart-table-wrapper{
+
+    width:100%;
+    overflow-x:auto;
+    -webkit-overflow-scrolling:touch;
+
+}
+
+
+
+.shopping-cart{
+
+    width:700px;
+    min-width:700px;
+
+}
+
+
+/* keep every row aligned */
+
+.shopping-cart tr{
+
+    display:table-row;
+
+}
+
+
+.shopping-cart th,
+.shopping-cart td{
+
+    display:table-cell;
+    vertical-align:middle;
+
+}
+
+
+
+.cart{
+
+    width:100%;
+}
+
+
+
+.order_summary{
+
+    width:100%;
+    max-width:350px;
+    margin:auto;
+
+}
+
+
+
+}
+
+
+
+/* very small phones */
+
+@media(max-width:390px){
+
+
+.shopping-cart{
+
+    min-width:650px;
+
+}
+
+
+.order_summary{
+
+    max-width:320px;
+
+}
+
+
+}
