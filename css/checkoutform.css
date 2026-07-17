@@ -365,6 +365,7 @@ hr{
 .order_summary{
     width:100%;
     max-width:100%;
+    margin-bottom:30px;
 }
 
 .form_heading{
@@ -376,6 +377,7 @@ hr{
 .col-3{
     flex-direction:column;
     gap:15px;
+    margin-top:20px;
 }
 
 .col-2 input,
