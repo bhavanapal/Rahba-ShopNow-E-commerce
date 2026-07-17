@@ -16,7 +16,10 @@ gap: 10px;
     gap: 15px;
     flex-shrink: 0; 
 }
-.logo-heading h1,img{
+/* .logo-heading h1,img
+{ */
+.logo-heading h1,
+.logo-heading img {
   display: flex; 
 height: 38.968px;
 justify-content: flex-end; 
@@ -54,13 +57,18 @@ gap: 32px;
 }
 .checkout_container{
 display: flex;
-width: 1368px;
+    width:100%;
+    max-width:1368px;
+    margin:0 auto;
+/* width: 1368px; */
 align-items: flex-start;
 gap: 49px;
 }
 .form_container{
 display: flex;
-width: 950px;
+     width:100%;
+    max-width:950px;
+/* width: 950px; */
 height: 902px;
 padding: 16px 32px;
 flex-direction: column;
@@ -72,12 +80,15 @@ flex-shrink: 0;
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-width: 640px;
+/* width: 640px;*/
+      width:100%;
+    max-width:640px;
 gap: 32px;
 }
 .form_heading{
     display: flex;
-width: 632px;
+/* width: 632px; */
+     width:100%;
 justify-content: space-between;
 align-items: flex-start;
 }
@@ -94,7 +105,9 @@ font-weight: 600;
 line-height: 120%; 
 text-transform: capitalize;
 }
-.form_heading p,a{
+/* .form_heading p,a */
+.form_heading p,
+.form_heading a {
 padding: 8px 4px;
 justify-content: center;
 align-items: flex-start;
@@ -115,9 +128,12 @@ flex-direction: column;
 gap: 16px; 
 align-items:flex-start;
 } 
-input[type=text],textarea{
+input[type=text],
+textarea{
 display: flex;
- width: 632px; 
+ /* width: 632px;  */
+      width:100%;
+    box-sizing:border-box;
  height: 48px;
  padding: 8px 4px;
 flex-direction: column;
@@ -180,15 +196,18 @@ justify-content: center;
 align-items: flex-start;
 gap: 9px;
 }
-.col-2,.col-3{
+.col-2,
+.col-3{
 display: flex;
-width: 632px;
+/* width: 632px; */
+    width:100%;
 justify-content: space-between;
 align-items: flex-start;
 }
 .col-2 input{
     display: flex;
-width: 310px;
+/* width: 310px; */
+    width:48%;
 flex-direction: column;
 align-items: flex-start;
 gap: 4px;
@@ -196,7 +215,8 @@ flex-shrink: 0;
 } 
 .col-3 input{
     display: flex;
-width: 200px;
+/* width: 200px; */
+     width:31%;
 flex-direction: column;
 align-items: flex-start;
 gap: 4px;
@@ -237,7 +257,9 @@ cursor: pointer;
 }
 .order_summary{
 display: flex;
- width: 363px;
+ /* width: 363px; */
+    width:100%;
+    max-width:363px;
 flex-direction: column;
 padding: 16px;
 align-items:center;
@@ -330,112 +352,57 @@ hr{
 
 
   /* media queries */
+@media (max-width:768px){
 
-  @media(max-width:600px){
-    .checkout{
-    display:flex;
-    width:537px;
-flex-direction: column;
-align-items:flex-start;
-gap: 32px;
-}
 .checkout_container{
-    display: flex;
-height: 1083px;
-align-items: flex-start;
-gap: 8px;
+    flex-direction:column;
+    align-items:center;
+    gap:30px;
 }
-.form_container{
-display: flex;
-width:321px; 
-height: 1051px;
-padding: 16px 4px;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-}
-.info_container{
-    display: flex;
-    width:321px;
-flex-direction: column;
-align-items: flex-start;
-gap: 32px;
-}
-.form_heading{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-align-self: stretch;
-}
-input[type=text],.col-3,textarea{
-    display: flex;
-width: 310px;
-flex-direction: column;
-align-items: flex-start;
-gap: 4px;
-}
-.col-2{
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 14px;
-align-self: stretch; 
-}
-.total_item{
-    flex: 1 0 0;
-align-self: stretch;
-}
+
+.form_container,
+.info_container,
 .order_summary{
-    display: flex;
-    width: 200px;
-    height: 430px;
-    padding: 16px 0px;
-    flex-direction: column;
-    align-items: center;
-    gap: 16px;
+    width:100%;
+    max-width:100%;
 }
-.order_summary h4{
-    display: flex;
-  width: 200px;
-height: 39px; 
-padding: 4px;
-justify-content: center;
-align-items: center;
-gap: 4px;
-color: var(--primary);
-text-align: center;
-font-size: 17px;
-font-style: normal;
-font-weight: 700;
-line-height: 120%;  
-text-transform: capitalize;
+
+.form_heading{
+    flex-direction:column;
+    gap:10px;
 }
+
+.col-2,
+.col-3{
+    flex-direction:column;
+    gap:15px;
+}
+
+.col-2 input,
+.col-3 input,
+input[type=text],
+textarea{
+    width:100%;
+}
+
+.col-2 .continue_shipping{
+    width:100%;
+}
+
 .order_item{
-display: flex;
-width: 187px;
-flex-direction: column;
-align-items: center;
-gap: 4px;
+    width:100%;
 }
-.pdetails{
-    display: flex;
-flex-direction: column;
-align-items: flex-end;
-gap: 5px;
-align-self: stretch;
+
+.order_item img{
+    width:100px;
+    height:auto;
 }
-.fa-x{
-    position: absolute;
-    top:17%;
-    right:10%;
-}
+
 .total_item{
-    display: flex;
-width: 190px;
-flex-direction: column;
-align-items: center;
-gap: 4px;
+    width:100%;
 }
+
 hr{
-    width: 190px;   
+    width:100%;
+}
 }
