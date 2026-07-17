@@ -17,12 +17,12 @@ align-items: flex-start;
 gap: 30px;
 width:1362px;  */
     display:flex;
-    /* width:100%;
-    /* max-width:1362px; */
-    margin:auto;
-    gap:30px; 
+    /* /* width:100%; */
+    max-width:1362px;
+    /* margin:auto; */
+    /* gap:30px;  */
      width:100%;
-    max-width:950px;
+    /* max-width:950px; */
     overflow-x:auto;
     border:1px solid var(--style-color-51);
 }
