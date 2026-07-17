@@ -359,13 +359,21 @@ hr{
     align-items:center;
     gap:30px;
 }
+    .order_summary{
+    margin-bottom:30px;
+}
+
+.col-2{
+    margin-top:20px;
+}
+
 
 .form_container,
 .info_container,
 .order_summary{
     width:100%;
     max-width:100%;
-    margin-bottom:30px;
+    /* margin-bottom:30px; */
 }
 
 .form_heading{
@@ -377,7 +385,7 @@ hr{
 .col-3{
     flex-direction:column;
     gap:15px;
-    margin-top:20px;
+    /* margin-top:20px; */
 }
 
 .col-2 input,
